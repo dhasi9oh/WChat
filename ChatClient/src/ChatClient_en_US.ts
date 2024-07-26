@@ -4,7 +4,7 @@
 <context>
     <name>ApplyFirendPage</name>
     <message>
-        <location filename="ApplyFirendPage.qml" line="72"/>
+        <location filename="ApplyFirendPage.qml" line="64"/>
         <source>新的朋友</source>
         <translation type="unfinished"></translation>
     </message>
@@ -12,28 +12,28 @@
 <context>
     <name>ApplyFriendWindow</name>
     <message>
-        <location filename="ApplyFriendWindow.qml" line="46"/>
+        <location filename="ApplyFriendWindow.qml" line="47"/>
         <source>申请添加好友</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ApplyFriendWindow.qml" line="61"/>
+        <location filename="ApplyFriendWindow.qml" line="62"/>
         <source>好友的账户</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ApplyFriendWindow.qml" line="71"/>
-        <location filename="ApplyFriendWindow.qml" line="76"/>
+        <location filename="ApplyFriendWindow.qml" line="72"/>
+        <location filename="ApplyFriendWindow.qml" line="77"/>
         <source>备注</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ApplyFriendWindow.qml" line="91"/>
+        <location filename="ApplyFriendWindow.qml" line="92"/>
         <source>确认</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ApplyFriendWindow.qml" line="99"/>
+        <location filename="ApplyFriendWindow.qml" line="100"/>
         <source>取消</source>
         <translation type="unfinished"></translation>
     </message>
@@ -41,27 +41,27 @@
 <context>
     <name>AuthenFriendWindow</name>
     <message>
-        <location filename="AuthenFriendWindow.qml" line="46"/>
+        <location filename="AuthenFriendWindow.qml" line="44"/>
         <source>通过好友验证</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="AuthenFriendWindow.qml" line="60"/>
+        <location filename="AuthenFriendWindow.qml" line="58"/>
         <source>备注</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="AuthenFriendWindow.qml" line="70"/>
+        <location filename="AuthenFriendWindow.qml" line="68"/>
         <source>描述:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="AuthenFriendWindow.qml" line="90"/>
+        <location filename="AuthenFriendWindow.qml" line="88"/>
         <source>接受</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="AuthenFriendWindow.qml" line="98"/>
+        <location filename="AuthenFriendWindow.qml" line="96"/>
         <source>拒绝</source>
         <translation type="unfinished"></translation>
     </message>
@@ -104,25 +104,25 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="httpmgr.cpp" line="95"/>
-        <location filename="httpmgr.cpp" line="107"/>
-        <location filename="httpmgr.cpp" line="120"/>
-        <location filename="httpmgr.cpp" line="133"/>
+        <location filename="httpmgr.cpp" line="88"/>
+        <location filename="httpmgr.cpp" line="100"/>
+        <location filename="httpmgr.cpp" line="113"/>
+        <location filename="httpmgr.cpp" line="126"/>
         <source>参数错误</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="httpmgr.cpp" line="99"/>
+        <location filename="httpmgr.cpp" line="92"/>
         <source>验证码已发送到邮箱，注意查收</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="httpmgr.cpp" line="111"/>
+        <location filename="httpmgr.cpp" line="104"/>
         <source>用户注册成功</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="httpmgr.cpp" line="124"/>
+        <location filename="httpmgr.cpp" line="117"/>
         <source>重置成功,点击返回登录</source>
         <translation type="unfinished"></translation>
     </message>
@@ -130,7 +130,7 @@
 <context>
     <name>InitWindow</name>
     <message>
-        <location filename="InitWindow.qml" line="10"/>
+        <location filename="InitWindow.qml" line="12"/>
         <source>微信</source>
         <translation type="unfinished"></translation>
     </message>
@@ -138,29 +138,29 @@
 <context>
     <name>LoginWindow</name>
     <message>
-        <location filename="LoginWindow.qml" line="31"/>
-        <location filename="LoginWindow.qml" line="45"/>
+        <location filename="LoginWindow.qml" line="32"/>
+        <location filename="LoginWindow.qml" line="46"/>
         <source>请输入账户</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LoginWindow.qml" line="36"/>
-        <location filename="LoginWindow.qml" line="48"/>
+        <location filename="LoginWindow.qml" line="37"/>
+        <location filename="LoginWindow.qml" line="49"/>
         <source>请输入密码</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LoginWindow.qml" line="40"/>
+        <location filename="LoginWindow.qml" line="41"/>
         <source>登录</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LoginWindow.qml" line="57"/>
+        <location filename="LoginWindow.qml" line="58"/>
         <source>注册</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="LoginWindow.qml" line="66"/>
+        <location filename="LoginWindow.qml" line="67"/>
         <source>找回密码</source>
         <translation type="unfinished"></translation>
     </message>
@@ -186,54 +186,54 @@
 <context>
     <name>RegisterWindow</name>
     <message>
-        <location filename="RegisterWindow.qml" line="34"/>
+        <location filename="RegisterWindow.qml" line="35"/>
         <source>请输入用户名</source>
         <oldsource>用户名</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="RegisterWindow.qml" line="40"/>
-        <location filename="RegisterWindow.qml" line="102"/>
+        <location filename="RegisterWindow.qml" line="41"/>
+        <location filename="RegisterWindow.qml" line="104"/>
         <source>请输入邮箱</source>
         <oldsource>邮箱</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="RegisterWindow.qml" line="46"/>
-        <location filename="RegisterWindow.qml" line="99"/>
+        <location filename="RegisterWindow.qml" line="47"/>
+        <location filename="RegisterWindow.qml" line="101"/>
         <source>请输入密码</source>
         <oldsource>密码</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="RegisterWindow.qml" line="53"/>
+        <location filename="RegisterWindow.qml" line="54"/>
         <source>再次输入密码</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="RegisterWindow.qml" line="64"/>
-        <location filename="RegisterWindow.qml" line="108"/>
+        <location filename="RegisterWindow.qml" line="65"/>
+        <location filename="RegisterWindow.qml" line="110"/>
         <source>请输入验证码</source>
         <oldsource>验证码</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="RegisterWindow.qml" line="92"/>
+        <location filename="RegisterWindow.qml" line="94"/>
         <source>确认</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="RegisterWindow.qml" line="96"/>
+        <location filename="RegisterWindow.qml" line="98"/>
         <source>请输入账户</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="RegisterWindow.qml" line="105"/>
+        <location filename="RegisterWindow.qml" line="107"/>
         <source>请确认密码</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="RegisterWindow.qml" line="124"/>
+        <location filename="RegisterWindow.qml" line="126"/>
         <source>取消</source>
         <translation type="unfinished"></translation>
     </message>
@@ -257,12 +257,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ResetWindow.qml" line="57"/>
+        <location filename="ResetWindow.qml" line="58"/>
         <source>请输入新密码</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ResetWindow.qml" line="74"/>
+        <location filename="ResetWindow.qml" line="75"/>
         <source>确认</source>
         <translation type="unfinished"></translation>
     </message>
@@ -299,7 +299,7 @@
 <context>
     <name>UsrInfoPage</name>
     <message>
-        <location filename="UsrInfoPage.qml" line="62"/>
+        <location filename="UsrInfoPage.qml" line="50"/>
         <source>联系人</source>
         <translation type="unfinished"></translation>
     </message>
@@ -307,7 +307,7 @@
 <context>
     <name>UsrMsgPage</name>
     <message>
-        <location filename="UsrMsgPage.qml" line="123"/>
+        <location filename="UsrMsgPage.qml" line="83"/>
         <source>消息</source>
         <translation type="unfinished"></translation>
     </message>

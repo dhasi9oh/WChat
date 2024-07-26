@@ -532,3 +532,17 @@
 751	3343	7435855683930371	src/CMakeFiles/ChatClient.dir/ChatClient_autogen/mocs_compilation.cpp.obj	b388a93be3e5b375
 757	3610	7435855686590364	src/CMakeFiles/ChatClient.dir/main.cpp.obj	4d9de9a19d6d8140
 3610	3881	7435855688837484	D:/code/CPP/VS/ChatClient/bin/Debug/ChatClient.exe	c8f939094906a447
+43	1128	0	src/CMakeFiles/Script-UpdateTranslations	ef288574f8761904
+43	1128	0	D:/code/CPP/VS/ChatClient/build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/src/CMakeFiles/Script-UpdateTranslations	ef288574f8761904
+1128	1843	7436920859031017	src/ChatClient_autogen/timestamp	f317e448c9892823
+1128	1843	7436920859031017	src/ChatClient_autogen/mocs_compilation.cpp	f317e448c9892823
+1128	1843	7436920859031017	D:/code/CPP/VS/ChatClient/build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/src/ChatClient_autogen/timestamp	f317e448c9892823
+1128	1843	7436920859031017	D:/code/CPP/VS/ChatClient/build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/src/ChatClient_autogen/mocs_compilation.cpp	f317e448c9892823
+1843	2010	7436920861762984	src/qrc_qml.cpp	3e679fd069c1824a
+1843	2010	7436920861762984	D:/code/CPP/VS/ChatClient/build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/src/qrc_qml.cpp	3e679fd069c1824a
+2033	2510	7436920866767015	src/CMakeFiles/ChatClient.dir/qrc_qml.cpp.obj	4303874585d83dab
+2016	5312	7436920894752080	src/CMakeFiles/ChatClient.dir/httpmgr.cpp.obj	23b48196360ca8f
+2027	5454	7436920896174975	src/CMakeFiles/ChatClient.dir/tcpmgr.cpp.obj	9bc19cdcaa9bf2c3
+2010	5696	7436920898603483	src/CMakeFiles/ChatClient.dir/ChatClient_autogen/mocs_compilation.cpp.obj	b388a93be3e5b375
+2022	6042	7436920902038003	src/CMakeFiles/ChatClient.dir/main.cpp.obj	4d9de9a19d6d8140
+6042	6554	7436920906602785	D:/code/CPP/VS/ChatClient/bin/Debug/ChatClient.exe	c8f939094906a447

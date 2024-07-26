@@ -1,4 +1,12 @@
 #include "tcpmgr.h"
+#include "usrmgr.h"
+#include "httpmgr.h"
+#include "userdata.h"
+
+#include <QJsonValue>
+#include <QJsonArray>
+#include <QJsonObject>
+#include <QJsonDocument>
 
 void TcpMgr::slotTcpConnect(ServerInfo info)
 {
@@ -36,6 +44,38 @@ void TcpMgr::slotSendData(ReqId reqId, QString data)
 }
 
 TcpMgr::~TcpMgr()
+{
+
+}
+
+void TcpMgr::addFriend(int uid, const QString &apply_name, const QString &back_name, int to_uid)
+{
+    QJsonObject jsonObj;
+    jsonObj["uid"] = uid;
+    jsonObj["touid"] = to_uid;
+    jsonObj["bakname"] = back_name;
+    jsonObj["applyname"] = apply_name;
+
+    QJsonDocument doc(jsonObj);
+    QString json_string = doc.toJson(QJsonDocument::Indented);
+
+    slotSendData(ReqId::ID_ADD_FRIEND_REQ, json_string);
+}
+
+void TcpMgr::authFriend(int from_id, int to_uid, const QString &back_name)
+{
+    QJsonObject jsonObj;
+    jsonObj["touid"] = to_uid;
+    jsonObj["fromid"] = from_id;
+    jsonObj["back"] = back_name;
+
+    QJsonDocument doc(jsonObj);
+    QString json_string = doc.toJson(QJsonDocument::Indented);
+
+    slotSendData(ReqId::ID_ADD_FRIEND_REQ, json_string);
+}
+
+void TcpMgr::sendChatTextMsg(int from_id, int to_uid, const QString &text)
 {
 
 }
@@ -289,9 +329,7 @@ void TcpMgr::initHandle()
         QString icon = jsonObj["icon"].toString();
         int sex = jsonObj["sex"].toInt();
 
-        auto auth_info = AuthInfo(from_uid, name, nick, icon, sex);
-
-        emit signalAddAuthFriend(auth_info);
+        emit signalAddAuthFriend(from_uid, name, nick, icon, sex);
         });
 
     m_handlers.insert(ID_ADD_FRIEND_RSP, [this](ReqId id, int len, QByteArray data) {
@@ -355,8 +393,7 @@ void TcpMgr::initHandle()
         auto icon = jsonObj["icon"].toString();
         auto sex = jsonObj["sex"].toInt();
         auto uid = jsonObj["uid"].toInt();
-        auto rsp = AuthRsp(uid, name, nick, icon, sex);
-        emit signalAuthRsp(rsp);
+        emit signalAuthRsp(uid, name, nick, icon, sex);
 
         qDebug() << "Auth Friend Success ";
         });

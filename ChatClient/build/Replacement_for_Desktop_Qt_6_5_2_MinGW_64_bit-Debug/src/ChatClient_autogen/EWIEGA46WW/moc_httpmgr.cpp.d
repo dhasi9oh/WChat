@@ -201,4 +201,6 @@ D:/code/CPP/VS/ChatClient/build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-De
   D:/Qt/6.6.3/msvc2019_64/include/QtQml/qtqmlexports.h \
   D:/Qt/6.6.3/msvc2019_64/include/QtQml/qtqmlglobal.h \
   D:/Qt/6.6.3/msvc2019_64/include/QtQmlIntegration/qqmlintegration.h \
-  D:/code/CPP/VS/ChatClient/src/global.h
+  D:/code/CPP/VS/ChatClient/src/global.h \
+  D:/code/CPP/VS/ChatClient/src/userdata.h \
+  D:/code/CPP/VS/ChatClient/src/usrmgr.h

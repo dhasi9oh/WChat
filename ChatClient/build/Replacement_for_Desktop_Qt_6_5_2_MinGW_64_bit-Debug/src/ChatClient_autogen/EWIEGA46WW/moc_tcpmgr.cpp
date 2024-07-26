@@ -51,21 +51,23 @@ constexpr auto qt_meta_stringdata_CLASSTcpMgrENDCLASS = QtMocHelpers::stringData
     "data",
     "signalSwichChatdlg",
     "signalLoginFailed",
-    "signalUserSearch",
-    "SearchInfo",
     "signalFriendApply",
-    "AddFriendApply",
+    "from_id",
+    "name",
+    "desc",
     "signalAddAuthFriend",
-    "AuthInfo",
+    "uid",
+    "nick",
+    "icon",
+    "sex",
     "signalAuthRsp",
-    "AuthRsp",
     "slotTcpConnect",
     "ServerInfo",
     "slotSendData"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSTcpMgrENDCLASS_t {
-    uint offsetsAndSizes[46];
+    uint offsetsAndSizes[50];
     char stringdata0[7];
     char stringdata1[12];
     char stringdata2[5];
@@ -78,17 +80,19 @@ struct qt_meta_stringdata_CLASSTcpMgrENDCLASS_t {
     char stringdata9[5];
     char stringdata10[19];
     char stringdata11[18];
-    char stringdata12[17];
-    char stringdata13[11];
-    char stringdata14[18];
-    char stringdata15[15];
+    char stringdata12[18];
+    char stringdata13[8];
+    char stringdata14[5];
+    char stringdata15[5];
     char stringdata16[20];
-    char stringdata17[9];
-    char stringdata18[14];
-    char stringdata19[8];
-    char stringdata20[15];
-    char stringdata21[11];
-    char stringdata22[13];
+    char stringdata17[4];
+    char stringdata18[5];
+    char stringdata19[5];
+    char stringdata20[4];
+    char stringdata21[14];
+    char stringdata22[15];
+    char stringdata23[11];
+    char stringdata24[13];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSTcpMgrENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -106,17 +110,19 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSTcpMgrENDCLASS_t qt_meta_string
         QT_MOC_LITERAL(82, 4),  // "data"
         QT_MOC_LITERAL(87, 18),  // "signalSwichChatdlg"
         QT_MOC_LITERAL(106, 17),  // "signalLoginFailed"
-        QT_MOC_LITERAL(124, 16),  // "signalUserSearch"
-        QT_MOC_LITERAL(141, 10),  // "SearchInfo"
-        QT_MOC_LITERAL(152, 17),  // "signalFriendApply"
-        QT_MOC_LITERAL(170, 14),  // "AddFriendApply"
-        QT_MOC_LITERAL(185, 19),  // "signalAddAuthFriend"
-        QT_MOC_LITERAL(205, 8),  // "AuthInfo"
-        QT_MOC_LITERAL(214, 13),  // "signalAuthRsp"
-        QT_MOC_LITERAL(228, 7),  // "AuthRsp"
-        QT_MOC_LITERAL(236, 14),  // "slotTcpConnect"
-        QT_MOC_LITERAL(251, 10),  // "ServerInfo"
-        QT_MOC_LITERAL(262, 12)   // "slotSendData"
+        QT_MOC_LITERAL(124, 17),  // "signalFriendApply"
+        QT_MOC_LITERAL(142, 7),  // "from_id"
+        QT_MOC_LITERAL(150, 4),  // "name"
+        QT_MOC_LITERAL(155, 4),  // "desc"
+        QT_MOC_LITERAL(160, 19),  // "signalAddAuthFriend"
+        QT_MOC_LITERAL(180, 3),  // "uid"
+        QT_MOC_LITERAL(184, 4),  // "nick"
+        QT_MOC_LITERAL(189, 4),  // "icon"
+        QT_MOC_LITERAL(194, 3),  // "sex"
+        QT_MOC_LITERAL(198, 13),  // "signalAuthRsp"
+        QT_MOC_LITERAL(212, 14),  // "slotTcpConnect"
+        QT_MOC_LITERAL(227, 10),  // "ServerInfo"
+        QT_MOC_LITERAL(238, 12)   // "slotSendData"
     },
     "TcpMgr",
     "QML.Element",
@@ -130,14 +136,16 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSTcpMgrENDCLASS_t qt_meta_string
     "data",
     "signalSwichChatdlg",
     "signalLoginFailed",
-    "signalUserSearch",
-    "SearchInfo",
     "signalFriendApply",
-    "AddFriendApply",
+    "from_id",
+    "name",
+    "desc",
     "signalAddAuthFriend",
-    "AuthInfo",
+    "uid",
+    "nick",
+    "icon",
+    "sex",
     "signalAuthRsp",
-    "AuthRsp",
     "slotTcpConnect",
     "ServerInfo",
     "slotSendData"
@@ -152,42 +160,40 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSTcpMgrENDCLASS[] = {
       12,       // revision
        0,       // classname
        1,   14, // classinfo
-      10,   16, // methods
+       9,   16, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       8,       // signalCount
+       7,       // signalCount
 
  // classinfo: key, value
        1,    2,
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       3,    1,   76,    4, 0x06,    1 /* Public */,
-       6,    2,   79,    4, 0x06,    3 /* Public */,
-      10,    0,   84,    4, 0x06,    6 /* Public */,
-      11,    1,   85,    4, 0x06,    7 /* Public */,
-      12,    1,   88,    4, 0x06,    9 /* Public */,
-      14,    1,   91,    4, 0x06,   11 /* Public */,
-      16,    1,   94,    4, 0x06,   13 /* Public */,
-      18,    1,   97,    4, 0x06,   15 /* Public */,
+       3,    1,   70,    4, 0x06,    1 /* Public */,
+       6,    2,   73,    4, 0x06,    3 /* Public */,
+      10,    0,   78,    4, 0x06,    6 /* Public */,
+      11,    1,   79,    4, 0x06,    7 /* Public */,
+      12,    3,   82,    4, 0x06,    9 /* Public */,
+      16,    5,   89,    4, 0x06,   13 /* Public */,
+      21,    5,  100,    4, 0x06,   19 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-      20,    1,  100,    4, 0x0a,   17 /* Public */,
-      22,    2,  103,    4, 0x0a,   19 /* Public */,
+      22,    1,  111,    4, 0x0a,   25 /* Public */,
+      24,    2,  114,    4, 0x0a,   27 /* Public */,
 
  // signals: parameters
     QMetaType::Void, QMetaType::Bool,    5,
     QMetaType::Void, 0x80000000 | 7, QMetaType::QString,    8,    9,
     QMetaType::Void,
     QMetaType::Void, QMetaType::Int,    4,
-    QMetaType::Void, 0x80000000 | 13,    4,
-    QMetaType::Void, 0x80000000 | 15,    4,
-    QMetaType::Void, 0x80000000 | 17,    4,
-    QMetaType::Void, 0x80000000 | 19,    4,
+    QMetaType::Void, QMetaType::Int, QMetaType::QString, QMetaType::QString,   13,   14,   15,
+    QMetaType::Void, QMetaType::Int, QMetaType::QString, QMetaType::QString, QMetaType::QString, QMetaType::Int,   17,   14,   18,   19,   20,
+    QMetaType::Void, QMetaType::Int, QMetaType::QString, QMetaType::QString, QMetaType::QString, QMetaType::Int,   17,   14,   18,   19,   20,
 
  // slots: parameters
-    QMetaType::Void, 0x80000000 | 21,    4,
+    QMetaType::Void, 0x80000000 | 23,    4,
     QMetaType::Void, 0x80000000 | 7, QMetaType::QString,    8,    9,
 
        0        // eod
@@ -214,18 +220,25 @@ Q_CONSTINIT const QMetaObject TcpMgr::staticMetaObject = { {
         // method 'signalLoginFailed'
         void,
         int,
-        // method 'signalUserSearch'
-        void,
-        SearchInfo,
         // method 'signalFriendApply'
         void,
-        AddFriendApply,
+        int,
+        QString,
+        QString,
         // method 'signalAddAuthFriend'
         void,
-        AuthInfo,
+        int,
+        QString,
+        QString,
+        QString,
+        int,
         // method 'signalAuthRsp'
         void,
-        AuthRsp,
+        int,
+        QString,
+        QString,
+        QString,
+        int,
         // method 'slotTcpConnect'
         void,
         ServerInfo,
@@ -247,12 +260,11 @@ void TcpMgr::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         case 1: _t->signalSendData((*reinterpret_cast< std::add_pointer_t<ReqId>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2]))); break;
         case 2: _t->signalSwichChatdlg(); break;
         case 3: _t->signalLoginFailed((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 4: _t->signalUserSearch((*reinterpret_cast< std::add_pointer_t<SearchInfo>>(_a[1]))); break;
-        case 5: _t->signalFriendApply((*reinterpret_cast< std::add_pointer_t<AddFriendApply>>(_a[1]))); break;
-        case 6: _t->signalAddAuthFriend((*reinterpret_cast< std::add_pointer_t<AuthInfo>>(_a[1]))); break;
-        case 7: _t->signalAuthRsp((*reinterpret_cast< std::add_pointer_t<AuthRsp>>(_a[1]))); break;
-        case 8: _t->slotTcpConnect((*reinterpret_cast< std::add_pointer_t<ServerInfo>>(_a[1]))); break;
-        case 9: _t->slotSendData((*reinterpret_cast< std::add_pointer_t<ReqId>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2]))); break;
+        case 4: _t->signalFriendApply((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[3]))); break;
+        case 5: _t->signalAddAuthFriend((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[4])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[5]))); break;
+        case 6: _t->signalAuthRsp((*reinterpret_cast< std::add_pointer_t<int>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[3])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[4])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[5]))); break;
+        case 7: _t->slotTcpConnect((*reinterpret_cast< std::add_pointer_t<ServerInfo>>(_a[1]))); break;
+        case 8: _t->slotSendData((*reinterpret_cast< std::add_pointer_t<ReqId>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -286,30 +298,23 @@ void TcpMgr::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
             }
         }
         {
-            using _t = void (TcpMgr::*)(SearchInfo );
-            if (_t _q_method = &TcpMgr::signalUserSearch; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            using _t = void (TcpMgr::*)(int , QString , QString );
+            if (_t _q_method = &TcpMgr::signalFriendApply; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 4;
                 return;
             }
         }
         {
-            using _t = void (TcpMgr::*)(AddFriendApply );
-            if (_t _q_method = &TcpMgr::signalFriendApply; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            using _t = void (TcpMgr::*)(int , QString , QString , QString , int );
+            if (_t _q_method = &TcpMgr::signalAddAuthFriend; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 5;
                 return;
             }
         }
         {
-            using _t = void (TcpMgr::*)(AuthInfo );
-            if (_t _q_method = &TcpMgr::signalAddAuthFriend; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
-                *result = 6;
-                return;
-            }
-        }
-        {
-            using _t = void (TcpMgr::*)(AuthRsp );
+            using _t = void (TcpMgr::*)(int , QString , QString , QString , int );
             if (_t _q_method = &TcpMgr::signalAuthRsp; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
-                *result = 7;
+                *result = 6;
                 return;
             }
         }
@@ -335,13 +340,13 @@ int TcpMgr::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 10)
+        if (_id < 9)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 10;
+        _id -= 9;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 10)
+        if (_id < 9)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 10;
+        _id -= 9;
     }
     return _id;
 }
@@ -374,30 +379,23 @@ void TcpMgr::signalLoginFailed(int _t1)
 }
 
 // SIGNAL 4
-void TcpMgr::signalUserSearch(SearchInfo _t1)
+void TcpMgr::signalFriendApply(int _t1, QString _t2, QString _t3)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t3))) };
     QMetaObject::activate(this, &staticMetaObject, 4, _a);
 }
 
 // SIGNAL 5
-void TcpMgr::signalFriendApply(AddFriendApply _t1)
+void TcpMgr::signalAddAuthFriend(int _t1, QString _t2, QString _t3, QString _t4, int _t5)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t3))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t4))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t5))) };
     QMetaObject::activate(this, &staticMetaObject, 5, _a);
 }
 
 // SIGNAL 6
-void TcpMgr::signalAddAuthFriend(AuthInfo _t1)
+void TcpMgr::signalAuthRsp(int _t1, QString _t2, QString _t3, QString _t4, int _t5)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t3))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t4))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t5))) };
     QMetaObject::activate(this, &staticMetaObject, 6, _a);
-}
-
-// SIGNAL 7
-void TcpMgr::signalAuthRsp(AuthRsp _t1)
-{
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
-    QMetaObject::activate(this, &staticMetaObject, 7, _a);
 }
 QT_WARNING_POP

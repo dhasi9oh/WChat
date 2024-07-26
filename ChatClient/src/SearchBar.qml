@@ -7,7 +7,6 @@ FluRectangle {
     color: "transparent"
 
     signal searchBarTextEdited(string s)
-    signal searchBarAddFriendButtonClicked()
 
     Row {
         spacing: 10
@@ -42,9 +41,13 @@ FluRectangle {
             }
 
             onClicked: {
-                search_bar.searchBarAddFriendButtonClicked();
+                apply_friend_window.open();
             }
         }
+    }
+
+    ApplyFriendWindow {
+        id: apply_friend_window
     }
 
 }

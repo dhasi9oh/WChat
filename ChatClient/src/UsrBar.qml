@@ -1,6 +1,8 @@
 import QtQuick 2.15
 import QtQuick.Layouts
 import FluentUI
+import TcpMgr
+import UsrMgr
 
 FluRectangle {
     color: "#efefef"
@@ -9,10 +11,6 @@ FluRectangle {
     signal usrBarMsgItemClicked(int idx);
     property ListModel usrBarMsgListModel: usr_msg_page.usrMsgPageModel
     property int usrBarStackIndex: 0
-
-    ApplyFriendWindow {
-        id: apply_friend_window
-    }
 
     Column {
         spacing: 0
@@ -58,9 +56,6 @@ FluRectangle {
             search_page.searchPageModel.clear()
             search_page.searchPageModel.append(items)
             usrBarStackIndex = 2
-        }
-        function onSearchBarAddFriendButtonClicked() {
-            apply_friend_window.open()
         }
     }
     Connections {

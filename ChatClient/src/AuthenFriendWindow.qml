@@ -9,8 +9,11 @@ Popup {
     modal: true
     closePolicy: Popup.CloseOnEscape
 
-    property string remark: ""
-    property string describe: ""
+    signal accept();
+    signal reject();
+    property int to_uid: 0 //对方的uid
+    property int from_uid: 0 //我的uid
+    property string back_name: "" //备注
 
     Column {
         spacing: 5
@@ -60,7 +63,7 @@ Popup {
         }
 
         FluTextBox{
-            placeholderText: qsTr(remark)
+            placeholderText: qsTr(name)
             anchors.horizontalCenter: parent.horizontalCenter
         }
 
@@ -71,7 +74,7 @@ Popup {
         }
 
         FluCopyableText{
-            text: qsTr(describe)
+            text: qsTr(desc)
             anchors.horizontalCenter: parent.horizontalCenter
         }
 

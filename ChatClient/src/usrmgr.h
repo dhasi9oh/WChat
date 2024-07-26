@@ -28,6 +28,12 @@ public:
 
     virtual ~UsrMgr();
 
+    Q_INVOKABLE int getUid() const;
+    Q_INVOKABLE void setUid(int uid);
+
+    Q_INVOKABLE QString getUsrName() const;
+    Q_INVOKABLE void setUsrName(const QString& name);
+
     QString getToken() const;
     void setToken(const QString& token);
 

@@ -6,6 +6,26 @@ UsrMgr::~UsrMgr()
 
 }
 
+int UsrMgr::getUid() const
+{
+    return m_userInfo._uid;
+}
+
+void UsrMgr::setUid(int uid)
+{
+    m_userInfo._uid = uid;
+}
+
+QString UsrMgr::getUsrName() const
+{
+    return m_userInfo._name;
+}
+
+void UsrMgr::setUsrName(const QString &name)
+{
+    m_userInfo._name = name;
+}
+
 QString UsrMgr::getToken() const
 {
     return m_token;

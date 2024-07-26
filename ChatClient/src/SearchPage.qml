@@ -10,19 +10,6 @@ FluRectangle {
 
     ListModel {
         id: search_page_model
-
-        ListElement {
-            name: "Bill Smith"
-        }
-        ListElement {
-            name: "John Brown"
-        }
-        ListElement {
-            name: "Sam Wise"
-        }
-        ListElement {
-            name: "Bill Smith"
-        }
     }
 
     Component {
@@ -48,7 +35,6 @@ FluRectangle {
                 }
             }
             onClicked: {
-                chat_window_stacklayout.currentIndex = 1;
                 searchPageListViewItemClicked(index);
             }
         }

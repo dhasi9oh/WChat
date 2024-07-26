@@ -2,11 +2,16 @@ import QtQuick 2.15
 import QtQuick.Controls
 import FluentUI
 import UsrMgr
+import TcpMgr
 
 FluRectangle {
 
     ListModel {
         id: apply_friend_page_listmodel
+    }
+
+    AuthenFriendWindow {
+        id: apply_friend_page_authen
     }
 
     Component {
@@ -43,13 +48,12 @@ FluRectangle {
             }
 
             onClicked: {
-                apply_friend_page_authen.open()
+                apply_friend_page_authen.desc = desc;
+                apply_friend_page_authen.to_uid = uid;
+                apply_friend_page_authen.from_uid = UsrMgr.getUid();
+                apply_friend_page_authen.open();
             }
         }
-    }
-
-    AuthenFriendWindow {
-        id: apply_friend_page_authen
     }
 
     Column {
@@ -82,6 +86,15 @@ FluRectangle {
             apply_friend_page_listmodel.append(
                         {"name": name, "desc": desc, "icon": icon,
                             "nick": nick, "sex": sex, "uid": uid, "status": status});
+        }
+    }
+
+    Connections {
+        target: apply_friend_page_authen
+        function onAccept() {
+            TcpMgr.authFriend(apply_friend_page_authen.from_uid,
+                              apply_friend_page_authen.to_uid,
+                              apply_friend_page_authen.back_name);
         }
     }
 }

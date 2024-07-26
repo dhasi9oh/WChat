@@ -78,10 +78,14 @@ void LogicSystem::registerCallBacks()
 		std::bind(&LogicSystem::searchInfo, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3);
 
 	m_callBackMap[ID_ADD_FRIEND_REQ] =
-		std::bind(&LogicSystem::loginHandler, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3);
+		std::bind(&LogicSystem::addFriendApply, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3);
 
 	m_callBackMap[ID_AUTH_FRIEND_REQ] =
-		std::bind(&LogicSystem::searchInfo, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3);
+		std::bind(&LogicSystem::authFriendApply, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3);
+
+	m_callBackMap[ID_TEXT_CHAT_MSG_REQ] =
+		std::bind(&LogicSystem::dealChatTextMsg, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3);
+
 }
 
 void LogicSystem::loginHandler(std::shared_ptr<TcpClient> session, const short& msg_id, const std::string& message)

@@ -8,9 +8,6 @@
 #include <QJsonDocument>
 
 #include "global.h"
-#include "usrmgr.h"
-#include "httpmgr.h"
-#include "userdata.h"
 
 class TcpMgr : public QObject
 {
@@ -27,11 +24,10 @@ signals:
     void signalSwichChatdlg();
     //tcp登录到服务器以后服务器没有token
     void signalLoginFailed(int);
-    //
-    void signalUserSearch(SearchInfo);
+    //void signalUserSearch(SearchInfo);
     void signalFriendApply(int from_id, QString name, QString desc);
-    void signalAddAuthFriend(AuthInfo);
-    void signalAuthRsp(AuthRsp);
+    void signalAuthRsp(int uid, QString name, QString nick, QString icon, int sex);
+    void signalAddAuthFriend(int uid, QString name, QString nick, QString icon, int sex);
 
 public slots:
 
@@ -46,6 +42,10 @@ public:
     }
 
     virtual ~TcpMgr();
+
+    Q_INVOKABLE void addFriend(int from_id, const QString& apply_name, const QString& back_name, int to_uid);
+    Q_INVOKABLE void authFriend(int from_id, int to_uid, const QString& back_name);
+    Q_INVOKABLE void sendChatTextMsg(int from_id, int to_uid, const QString& text);
 
 private:
 

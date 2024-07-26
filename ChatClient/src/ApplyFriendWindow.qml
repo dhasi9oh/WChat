@@ -1,6 +1,8 @@
 import QtQuick 2.15
 import QtQuick.Controls
 import FluentUI
+import TcpMgr
+import UsrMgr
 
 Popup {
     id: self
@@ -8,10 +10,6 @@ Popup {
     height: 400
     modal: true
     closePolicy: Popup.CloseOnEscape
-
-    property string usrNameStr: ""
-    signal applyFriendAcceptBtnClicked();
-    signal applyFriendRejectBtnClicked();
 
     Column {
         spacing: 5
@@ -68,6 +66,7 @@ Popup {
         }
 
         FluText {
+            id: back_name
             text: qsTr("备注")
             anchors.horizontalCenter: parent.horizontalCenter
         }
@@ -90,7 +89,11 @@ Popup {
                 id: accept_btn
                 text: qsTr("确认")
                 onClicked: {
-
+                    TcpMgr.addFriend(UsrMgr.getUid(),
+                                     UsrMgr.getUsrName(),
+                                     back_name.text,
+                                     to_uid);
+                    self.close();
                 }
             }
 
@@ -98,13 +101,12 @@ Popup {
                 id: reject_btn
                 text: qsTr("取消")
                 onClicked: {
-
+                    self.close();
                 }
             }
         }
 
     }
-
 
     onOpened: {
         var screenWidth = init_window.width
@@ -115,4 +117,5 @@ Popup {
         self.x = (screenWidth - windowWidth) / 2
         self.y = (screenHeight - windowHeight) / 2 - 50
     }
+
 }
