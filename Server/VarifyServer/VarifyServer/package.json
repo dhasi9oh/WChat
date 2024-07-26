@@ -1,0 +1,19 @@
+{
+  "name": "varify-server",
+  "version": "0.0.0",
+  "description": "VarifyServer",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "devDependencies": {
+    "@grpc/grpc-js": "^1.10.11",
+    "@grpc/proto-loader": "^0.7.13",
+    "eslint": "^8.57.0",
+    "ioredis": "^5.4.1",
+    "nodemailer": "^6.9.14",
+    "uuid": "^9.0.1",
+    "path": "0.12.7"
+  },
+  "eslintConfig": {}
+}

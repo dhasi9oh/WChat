@@ -1,0 +1,208 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "auto"
+                }
+            ],
+            "className": "BasePlot",
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "key",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "addGraph",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "key",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "removeGraph",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "onlyVisiblePlottables",
+                            "type": "bool"
+                        }
+                    ],
+                    "name": "rescaleAxes",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "isCloned": true,
+                    "name": "rescaleAxes",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "backgroundColor",
+                    "notify": "backgroundColorChanged",
+                    "read": "backgroundColor",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false,
+                    "write": "set_backgroundColor"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "name": "xAxis",
+                    "notify": "xAxisChanged",
+                    "read": "xAxis",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QmlQCustomPlot::Axis*",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "name": "x1Axis",
+                    "notify": "x1AxisChanged",
+                    "read": "x1Axis",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QmlQCustomPlot::Axis*",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 3,
+                    "name": "yAxis",
+                    "notify": "yAxisChanged",
+                    "read": "yAxis",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QmlQCustomPlot::Axis*",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 4,
+                    "name": "y1Axis",
+                    "notify": "y1AxisChanged",
+                    "read": "y1Axis",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QmlQCustomPlot::Axis*",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 5,
+                    "name": "graphs",
+                    "notify": "graphsChanged",
+                    "read": "graphs",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QVariantMap",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "QmlQCustomPlot::BasePlot",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "type": "QColor"
+                        }
+                    ],
+                    "name": "backgroundColorChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "type": "QmlQCustomPlot::Axis*"
+                        }
+                    ],
+                    "name": "xAxisChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "type": "QmlQCustomPlot::Axis*"
+                        }
+                    ],
+                    "name": "x1AxisChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "type": "QmlQCustomPlot::Axis*"
+                        }
+                    ],
+                    "name": "yAxisChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "type": "QmlQCustomPlot::Axis*"
+                        }
+                    ],
+                    "name": "y1AxisChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "graphsChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QQuickPaintedItem"
+                }
+            ]
+        }
+    ],
+    "inputFile": "baseplot.h",
+    "outputRevision": 68
+}

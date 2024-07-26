@@ -1,0 +1,5419 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "D:/Qt/6.6.3/msvc2019_64/qml/FluentUI/fluentuiplugind.dll"
+		},
+		{
+			"path" : "D:/Qt/6.6.3/msvc2019_64/qml/FluentUI/fluentuiplugind.lib"
+		},
+		{
+			"path" : "D:/Qt/6.6.3/msvc2019_64/qml/FluentUI/fluentuiplugind.pdb"
+		}
+	],
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"_qt_internal_add_library",
+			"qt6_add_library",
+			"qt_add_library",
+			"target_link_libraries",
+			"set_target_properties",
+			"include",
+			"find_package",
+			"qt6_add_qml_module",
+			"qt_add_qml_module",
+			"find_dependency",
+			"_qt_internal_find_qt_dependencies",
+			"_qt_internal_target_enable_qmlcachegen",
+			"qt6_target_qml_sources",
+			"add_dependencies",
+			"add_definitions",
+			"target_compile_definitions",
+			"target_include_directories",
+			"_qt_internal_qml_type_registration",
+			"target_sources",
+			"qt6_extract_metatypes",
+			"set_source_files_properties",
+			"__qt_propagate_generated_resource",
+			"_qt_internal_process_resource",
+			"qt6_add_resources",
+			"qt6_add_qml_plugin",
+			"_qt_internal_expose_deferred_files_to_ide",
+			"qt6_finalize_target"
+		],
+		"files" : 
+		[
+			"D:/Qt/6.6.3/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
+			"FluentUI/CMakeLists.txt",
+			"D:/Qt/6.6.3/msvc2019_64/lib/cmake/Qt6Quick/Qt6QuickTargets.cmake",
+			"D:/Qt/6.6.3/msvc2019_64/lib/cmake/Qt6Quick/Qt6QuickConfig.cmake",
+			"D:/Qt/6.6.3/msvc2019_64/lib/cmake/Qt6/Qt6Config.cmake",
+			"D:/Qt/6.6.3/msvc2019_64/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"D:/Qt/6.6.3/msvc2019_64/lib/cmake/Qt6Network/Qt6NetworkVersionlessTargets.cmake",
+			"D:/Qt/6.6.3/msvc2019_64/lib/cmake/Qt6Network/Qt6NetworkConfig.cmake",
+			"D:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake",
+			"D:/Qt/6.6.3/msvc2019_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+			"D:/Qt/6.6.3/msvc2019_64/lib/cmake/Qt6Qml/Qt6QmlDependencies.cmake",
+			"D:/Qt/6.6.3/msvc2019_64/lib/cmake/Qt6Qml/Qt6QmlConfig.cmake",
+			"D:/Qt/6.6.3/msvc2019_64/lib/cmake/Qt6Quick/Qt6QuickDependencies.cmake",
+			"D:/Qt/6.6.3/msvc2019_64/lib/cmake/Qt6Network/Qt6NetworkTargets.cmake",
+			"D:/Qt/6.6.3/msvc2019_64/lib/cmake/Qt6Qml/Qt6QmlTargets.cmake",
+			"D:/Qt/6.6.3/msvc2019_64/lib/cmake/Qt6OpenGL/Qt6OpenGLVersionlessTargets.cmake",
+			"D:/Qt/6.6.3/msvc2019_64/lib/cmake/Qt6OpenGL/Qt6OpenGLConfig.cmake",
+			"D:/Qt/6.6.3/msvc2019_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake",
+			"D:/Qt/6.6.3/msvc2019_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake",
+			"D:/Qt/6.6.3/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake",
+			"D:/Qt/6.6.3/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake",
+			"CMakeLists.txt",
+			"D:/Qt/6.6.3/msvc2019_64/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake",
+			"D:/Qt/6.6.3/msvc2019_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake",
+			"D:/Qt/6.6.3/msvc2019_64/lib/cmake/Qt6PrintSupport/Qt6PrintSupportTargets.cmake",
+			"D:/Qt/6.6.3/msvc2019_64/lib/cmake/Qt6PrintSupport/Qt6PrintSupportConfig.cmake",
+			"D:/Qt/6.6.3/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:742:EVAL"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 150,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 2424,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 2327,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2401,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 197,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 208,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 1,
+				"line" : 34,
+				"parent" : 0
+			},
+			{
+				"file" : 4,
+				"parent" : 7
+			},
+			{
+				"command" : 7,
+				"file" : 4,
+				"line" : 164,
+				"parent" : 8
+			},
+			{
+				"file" : 3,
+				"parent" : 9
+			},
+			{
+				"command" : 6,
+				"file" : 3,
+				"line" : 52,
+				"parent" : 10
+			},
+			{
+				"file" : 2,
+				"parent" : 11
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 61,
+				"parent" : 12
+			},
+			{
+				"command" : 9,
+				"file" : 1,
+				"line" : 151,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 5,
+				"line" : 717,
+				"parent" : 14
+			},
+			{
+				"command" : 4,
+				"file" : 5,
+				"line" : 392,
+				"parent" : 15
+			},
+			{
+				"command" : 6,
+				"file" : 3,
+				"line" : 40,
+				"parent" : 10
+			},
+			{
+				"file" : 12,
+				"parent" : 17
+			},
+			{
+				"command" : 11,
+				"file" : 12,
+				"line" : 39,
+				"parent" : 18
+			},
+			{
+				"command" : 10,
+				"file" : 9,
+				"line" : 111,
+				"parent" : 19
+			},
+			{
+				"command" : 7,
+				"file" : 8,
+				"line" : 76,
+				"parent" : 20
+			},
+			{
+				"file" : 11,
+				"parent" : 21
+			},
+			{
+				"command" : 6,
+				"file" : 11,
+				"line" : 41,
+				"parent" : 22
+			},
+			{
+				"file" : 10,
+				"parent" : 23
+			},
+			{
+				"command" : 11,
+				"file" : 10,
+				"line" : 39,
+				"parent" : 24
+			},
+			{
+				"command" : 10,
+				"file" : 9,
+				"line" : 111,
+				"parent" : 25
+			},
+			{
+				"command" : 7,
+				"file" : 8,
+				"line" : 76,
+				"parent" : 26
+			},
+			{
+				"file" : 7,
+				"parent" : 27
+			},
+			{
+				"command" : 6,
+				"file" : 7,
+				"line" : 57,
+				"parent" : 28
+			},
+			{
+				"file" : 6,
+				"parent" : 29
+			},
+			{
+				"command" : 5,
+				"file" : 6,
+				"line" : 61,
+				"parent" : 30
+			},
+			{
+				"command" : 6,
+				"file" : 7,
+				"line" : 52,
+				"parent" : 28
+			},
+			{
+				"file" : 13,
+				"parent" : 32
+			},
+			{
+				"command" : 5,
+				"file" : 13,
+				"line" : 61,
+				"parent" : 33
+			},
+			{
+				"command" : 6,
+				"file" : 11,
+				"line" : 53,
+				"parent" : 22
+			},
+			{
+				"file" : 14,
+				"parent" : 35
+			},
+			{
+				"command" : 5,
+				"file" : 14,
+				"line" : 61,
+				"parent" : 36
+			},
+			{
+				"command" : 10,
+				"file" : 9,
+				"line" : 111,
+				"parent" : 19
+			},
+			{
+				"command" : 7,
+				"file" : 8,
+				"line" : 76,
+				"parent" : 38
+			},
+			{
+				"file" : 16,
+				"parent" : 39
+			},
+			{
+				"command" : 6,
+				"file" : 16,
+				"line" : 57,
+				"parent" : 40
+			},
+			{
+				"file" : 15,
+				"parent" : 41
+			},
+			{
+				"command" : 5,
+				"file" : 15,
+				"line" : 61,
+				"parent" : 42
+			},
+			{
+				"command" : 7,
+				"file" : 4,
+				"line" : 164,
+				"parent" : 8
+			},
+			{
+				"file" : 18,
+				"parent" : 44
+			},
+			{
+				"command" : 6,
+				"file" : 18,
+				"line" : 52,
+				"parent" : 45
+			},
+			{
+				"file" : 17,
+				"parent" : 46
+			},
+			{
+				"command" : 5,
+				"file" : 17,
+				"line" : 61,
+				"parent" : 47
+			},
+			{
+				"command" : 13,
+				"file" : 5,
+				"line" : 633,
+				"parent" : 15
+			},
+			{
+				"command" : 12,
+				"file" : 5,
+				"line" : 2331,
+				"parent" : 49
+			},
+			{
+				"command" : 4,
+				"file" : 5,
+				"line" : 1153,
+				"parent" : 50
+			},
+			{
+				"file" : 21
+			},
+			{
+				"command" : 7,
+				"file" : 21,
+				"line" : 6,
+				"parent" : 52
+			},
+			{
+				"file" : 4,
+				"parent" : 53
+			},
+			{
+				"command" : 7,
+				"file" : 4,
+				"line" : 164,
+				"parent" : 54
+			},
+			{
+				"file" : 20,
+				"parent" : 55
+			},
+			{
+				"command" : 6,
+				"file" : 20,
+				"line" : 53,
+				"parent" : 56
+			},
+			{
+				"file" : 19,
+				"parent" : 57
+			},
+			{
+				"command" : 5,
+				"file" : 19,
+				"line" : 61,
+				"parent" : 58
+			},
+			{
+				"command" : 10,
+				"file" : 9,
+				"line" : 111,
+				"parent" : 19
+			},
+			{
+				"command" : 7,
+				"file" : 8,
+				"line" : 76,
+				"parent" : 60
+			},
+			{
+				"file" : 23,
+				"parent" : 61
+			},
+			{
+				"command" : 6,
+				"file" : 23,
+				"line" : 52,
+				"parent" : 62
+			},
+			{
+				"file" : 22,
+				"parent" : 63
+			},
+			{
+				"command" : 5,
+				"file" : 22,
+				"line" : 61,
+				"parent" : 64
+			},
+			{
+				"command" : 7,
+				"file" : 4,
+				"line" : 164,
+				"parent" : 8
+			},
+			{
+				"file" : 25,
+				"parent" : 66
+			},
+			{
+				"command" : 6,
+				"file" : 25,
+				"line" : 52,
+				"parent" : 67
+			},
+			{
+				"file" : 24,
+				"parent" : 68
+			},
+			{
+				"command" : 5,
+				"file" : 24,
+				"line" : 61,
+				"parent" : 69
+			},
+			{
+				"command" : 14,
+				"file" : 5,
+				"line" : 2444,
+				"parent" : 49
+			},
+			{
+				"command" : 15,
+				"file" : 1,
+				"line" : 23,
+				"parent" : 0
+			},
+			{
+				"command" : 16,
+				"file" : 1,
+				"line" : 178,
+				"parent" : 0
+			},
+			{
+				"command" : 18,
+				"file" : 5,
+				"line" : 540,
+				"parent" : 15
+			},
+			{
+				"command" : 17,
+				"file" : 5,
+				"line" : 2755,
+				"parent" : 74
+			},
+			{
+				"command" : 17,
+				"file" : 1,
+				"line" : 223,
+				"parent" : 0
+			},
+			{
+				"command" : 17,
+				"file" : 5,
+				"line" : 2780,
+				"parent" : 74
+			},
+			{
+				"command" : 20,
+				"file" : 5,
+				"line" : 2585,
+				"parent" : 74
+			},
+			{
+				"command" : 19,
+				"file" : 0,
+				"line" : 1213,
+				"parent" : 78
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2746,
+				"parent" : 74
+			},
+			{
+				"command" : 21,
+				"file" : 5,
+				"line" : 2770,
+				"parent" : 74
+			},
+			{
+				"command" : 24,
+				"file" : 5,
+				"line" : 584,
+				"parent" : 15
+			},
+			{
+				"command" : 23,
+				"file" : 0,
+				"line" : 337,
+				"parent" : 82
+			},
+			{
+				"command" : 22,
+				"file" : 0,
+				"line" : 2153,
+				"parent" : 83
+			},
+			{
+				"command" : 19,
+				"file" : 0,
+				"line" : 1797,
+				"parent" : 84
+			},
+			{
+				"command" : 25,
+				"file" : 5,
+				"line" : 611,
+				"parent" : 15
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 1930,
+				"parent" : 86
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 623,
+				"parent" : 15
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 1152,
+				"parent" : 50
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2227,
+				"parent" : 49
+			},
+			{
+				"command" : 19,
+				"file" : 5,
+				"line" : 2380,
+				"parent" : 49
+			},
+			{
+				"command" : 24,
+				"file" : 5,
+				"line" : 2463,
+				"parent" : 49
+			},
+			{
+				"command" : 23,
+				"file" : 0,
+				"line" : 337,
+				"parent" : 280
+			},
+			{
+				"command" : 22,
+				"file" : 0,
+				"line" : 2153,
+				"parent" : 281
+			},
+			{
+				"command" : 19,
+				"file" : 0,
+				"line" : 1797,
+				"parent" : 282
+			},
+			{
+				"file" : 1,
+				"line" : -1,
+				"parent" : 0
+			},
+			{
+				"command" : 27,
+				"file" : 26,
+				"line" : 1,
+				"parent" : 284
+			},
+			{
+				"command" : 26,
+				"file" : 0,
+				"line" : 767,
+				"parent" : 285
+			},
+			{
+				"command" : 19,
+				"file" : 0,
+				"line" : 1881,
+				"parent" : 286
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-DQT_QML_DEBUG /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Zc:__cplusplus"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-permissive-"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-utf-8"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 72,
+					"define" : "FLUENTUI_VERSION=1,7,7,0"
+				},
+				{
+					"backtrace" : 73,
+					"define" : "HAVE_CONFIG_H"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_OPENGL_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_PRINTSUPPORT_LIB"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "QT_QMLINTEGRATION_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_QMLMODELS_LIB"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "QT_QML_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_QUICK_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_WIDGETS_LIB"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "WIN32"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "WIN64"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "_ENABLE_EXTENDED_ALIGNED_STORAGE"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "_UNICODE"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "_WIN64"
+				},
+				{
+					"define" : "fluentuiplugin_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "D:/code/CPP/VS/ChatClient/build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/fluentuiplugin_autogen/include"
+				},
+				{
+					"backtrace" : 75,
+					"path" : "D:/code/CPP/VS/ChatClient/FluentUI"
+				},
+				{
+					"backtrace" : 76,
+					"path" : "D:/code/CPP/VS/ChatClient/FluentUI/qmlcustomplot"
+				},
+				{
+					"backtrace" : 77,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtQml/6.6.3"
+				},
+				{
+					"backtrace" : 77,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtQml/6.6.3/QtQml"
+				},
+				{
+					"backtrace" : 77,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtCore/6.6.3"
+				},
+				{
+					"backtrace" : 77,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtCore/6.6.3/QtCore"
+				},
+				{
+					"backtrace" : 77,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtCore"
+				},
+				{
+					"backtrace" : 77,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include"
+				},
+				{
+					"backtrace" : 77,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/mkspecs/win32-msvc"
+				},
+				{
+					"backtrace" : 77,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtQml"
+				},
+				{
+					"backtrace" : 77,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtQmlIntegration"
+				},
+				{
+					"backtrace" : 77,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtNetwork"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtQuick"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtGui"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtQmlModels"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtOpenGL"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtWidgets"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtPrintSupport"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					16,
+					16
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				3,
+				4,
+				6,
+				8,
+				10,
+				12,
+				14,
+				16,
+				18,
+				20,
+				22,
+				24,
+				26,
+				28,
+				30,
+				32,
+				34,
+				37,
+				40,
+				42,
+				44,
+				46,
+				48,
+				51,
+				53,
+				55,
+				58,
+				60,
+				62,
+				64,
+				67,
+				69,
+				71,
+				73,
+				77,
+				80,
+				81,
+				83,
+				85,
+				87,
+				89,
+				91,
+				93,
+				95,
+				97,
+				99,
+				101,
+				103,
+				105,
+				107,
+				109,
+				111,
+				113,
+				115,
+				117,
+				119,
+				121,
+				123,
+				125,
+				127,
+				129,
+				131,
+				133,
+				135,
+				137,
+				139,
+				141,
+				143,
+				145,
+				147,
+				149,
+				151,
+				153,
+				155,
+				157,
+				159,
+				161,
+				163,
+				165,
+				167,
+				169,
+				171,
+				173,
+				175,
+				177,
+				179,
+				181,
+				183,
+				185,
+				187,
+				189,
+				191,
+				193,
+				195,
+				197,
+				199,
+				201,
+				203,
+				205,
+				207,
+				209,
+				211,
+				213,
+				215,
+				217,
+				219,
+				221,
+				223,
+				225,
+				227,
+				229,
+				231,
+				233,
+				235,
+				237,
+				239,
+				241,
+				243,
+				245,
+				247,
+				249,
+				251,
+				253,
+				255,
+				257,
+				259,
+				261,
+				263,
+				265,
+				267,
+				269,
+				270
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-DQT_QML_DEBUG /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-Zc:__cplusplus"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-permissive-"
+				},
+				{
+					"backtrace" : 16,
+					"fragment" : "-utf-8"
+				},
+				{
+					"backtrace" : 81,
+					"fragment" : "/bigobj"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 72,
+					"define" : "FLUENTUI_VERSION=1,7,7,0"
+				},
+				{
+					"backtrace" : 73,
+					"define" : "HAVE_CONFIG_H"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_OPENGL_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_PRINTSUPPORT_LIB"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "QT_QMLINTEGRATION_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_QMLMODELS_LIB"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "QT_QML_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_QUICK_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_WIDGETS_LIB"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "WIN32"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "WIN64"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "_ENABLE_EXTENDED_ALIGNED_STORAGE"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "_UNICODE"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "_WIN64"
+				},
+				{
+					"define" : "fluentuiplugin_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "D:/code/CPP/VS/ChatClient/build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/fluentuiplugin_autogen/include"
+				},
+				{
+					"backtrace" : 75,
+					"path" : "D:/code/CPP/VS/ChatClient/FluentUI"
+				},
+				{
+					"backtrace" : 76,
+					"path" : "D:/code/CPP/VS/ChatClient/FluentUI/qmlcustomplot"
+				},
+				{
+					"backtrace" : 77,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtQml/6.6.3"
+				},
+				{
+					"backtrace" : 77,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtQml/6.6.3/QtQml"
+				},
+				{
+					"backtrace" : 77,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtCore/6.6.3"
+				},
+				{
+					"backtrace" : 77,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtCore/6.6.3/QtCore"
+				},
+				{
+					"backtrace" : 77,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtCore"
+				},
+				{
+					"backtrace" : 77,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include"
+				},
+				{
+					"backtrace" : 77,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/mkspecs/win32-msvc"
+				},
+				{
+					"backtrace" : 77,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtQml"
+				},
+				{
+					"backtrace" : 77,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtQmlIntegration"
+				},
+				{
+					"backtrace" : 77,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtNetwork"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtQuick"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtGui"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtQmlModels"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtOpenGL"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtWidgets"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtPrintSupport"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					16,
+					16
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				2
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-DWIN32 -D_DEBUG"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 72,
+					"define" : "FLUENTUI_VERSION=1,7,7,0"
+				},
+				{
+					"backtrace" : 73,
+					"define" : "HAVE_CONFIG_H"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_OPENGL_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_PRINTSUPPORT_LIB"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "QT_QMLINTEGRATION_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_QMLMODELS_LIB"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "QT_QML_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_QUICK_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "QT_WIDGETS_LIB"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "WIN32"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "WIN64"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "_ENABLE_EXTENDED_ALIGNED_STORAGE"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "_UNICODE"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "_WIN64"
+				},
+				{
+					"define" : "fluentuiplugin_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "D:/code/CPP/VS/ChatClient/build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/fluentuiplugin_autogen/include"
+				},
+				{
+					"backtrace" : 75,
+					"path" : "D:/code/CPP/VS/ChatClient/FluentUI"
+				},
+				{
+					"backtrace" : 76,
+					"path" : "D:/code/CPP/VS/ChatClient/FluentUI/qmlcustomplot"
+				},
+				{
+					"backtrace" : 77,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtQml/6.6.3"
+				},
+				{
+					"backtrace" : 77,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtQml/6.6.3/QtQml"
+				},
+				{
+					"backtrace" : 77,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtCore/6.6.3"
+				},
+				{
+					"backtrace" : 77,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtCore/6.6.3/QtCore"
+				},
+				{
+					"backtrace" : 77,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtCore"
+				},
+				{
+					"backtrace" : 77,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include"
+				},
+				{
+					"backtrace" : 77,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/mkspecs/win32-msvc"
+				},
+				{
+					"backtrace" : 77,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtQml"
+				},
+				{
+					"backtrace" : 77,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtQmlIntegration"
+				},
+				{
+					"backtrace" : 77,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtNetwork"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtQuick"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtGui"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtQmlModels"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtOpenGL"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtWidgets"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "D:/Qt/6.6.3/msvc2019_64/include/QtPrintSupport"
+				}
+			],
+			"language" : "RC",
+			"sourceIndexes" : 
+			[
+				78
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 71,
+			"id" : "fluentuiplugin_tooling::@7366c80dbef1255836ce"
+		},
+		{
+			"id" : "fluentuiplugin_autogen_timestamp_deps::@7366c80dbef1255836ce"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "fluentuiplugin_autogen::@7366c80dbef1255836ce"
+		}
+	],
+	"id" : "fluentuiplugin::@7366c80dbef1255836ce",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "D:\\Qt\\6.6.3\\msvc2019_64\\lib\\Qt6Quickd.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "D:\\Qt\\6.6.3\\msvc2019_64\\lib\\Qt6PrintSupportd.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "user32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "D:\\Qt\\6.6.3\\msvc2019_64\\lib\\Qt6QmlModelsd.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 16,
+				"fragment" : "D:\\Qt\\6.6.3\\msvc2019_64\\lib\\Qt6Qmld.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 31,
+				"fragment" : "D:\\Qt\\6.6.3\\msvc2019_64\\lib\\Qt6Networkd.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 34,
+				"fragment" : "ws2_32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 37,
+				"fragment" : "shell32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 43,
+				"fragment" : "D:\\Qt\\6.6.3\\msvc2019_64\\lib\\Qt6OpenGLd.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "D:\\Qt\\6.6.3\\msvc2019_64\\lib\\Qt6Widgetsd.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 48,
+				"fragment" : "D:\\Qt\\6.6.3\\msvc2019_64\\lib\\Qt6Guid.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 51,
+				"fragment" : "D:\\Qt\\6.6.3\\msvc2019_64\\lib\\Qt6Cored.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 59,
+				"fragment" : "mpr.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 59,
+				"fragment" : "userenv.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 65,
+				"fragment" : "d3d11.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 65,
+				"fragment" : "dxgi.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 65,
+				"fragment" : "dxguid.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 65,
+				"fragment" : "d3d12.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 70,
+				"fragment" : "comdlg32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 70,
+				"fragment" : "winspool.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "fluentuiplugin",
+	"nameOnDisk" : "fluentuiplugind.dll",
+	"paths" : 
+	{
+		"build" : "FluentUI",
+		"source" : "FluentUI"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				3,
+				4,
+				6,
+				8,
+				10,
+				12,
+				14,
+				16,
+				18,
+				20,
+				22,
+				24,
+				26,
+				28,
+				30,
+				32,
+				34,
+				37,
+				40,
+				42,
+				44,
+				46,
+				48,
+				51,
+				53,
+				55,
+				58,
+				60,
+				62,
+				64,
+				67,
+				69,
+				71,
+				73,
+				77,
+				78,
+				80,
+				81,
+				83,
+				85,
+				87,
+				89,
+				91,
+				93,
+				95,
+				97,
+				99,
+				101,
+				103,
+				105,
+				107,
+				109,
+				111,
+				113,
+				115,
+				117,
+				119,
+				121,
+				123,
+				125,
+				127,
+				129,
+				131,
+				133,
+				135,
+				137,
+				139,
+				141,
+				143,
+				145,
+				147,
+				149,
+				151,
+				153,
+				155,
+				157,
+				159,
+				161,
+				163,
+				165,
+				167,
+				169,
+				171,
+				173,
+				175,
+				177,
+				179,
+				181,
+				183,
+				185,
+				187,
+				189,
+				191,
+				193,
+				195,
+				197,
+				199,
+				201,
+				203,
+				205,
+				207,
+				209,
+				211,
+				213,
+				215,
+				217,
+				219,
+				221,
+				223,
+				225,
+				227,
+				229,
+				231,
+				233,
+				235,
+				237,
+				239,
+				241,
+				243,
+				245,
+				247,
+				249,
+				251,
+				253,
+				255,
+				257,
+				259,
+				261,
+				263,
+				265,
+				267,
+				269,
+				270
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				1,
+				79,
+				82,
+				84,
+				86,
+				88,
+				90,
+				92,
+				94,
+				96,
+				98,
+				100,
+				102,
+				104,
+				106,
+				108,
+				110,
+				112,
+				114,
+				116,
+				118,
+				120,
+				122,
+				124,
+				126,
+				128,
+				130,
+				132,
+				134,
+				136,
+				138,
+				140,
+				142,
+				144,
+				146,
+				148,
+				150,
+				152,
+				154,
+				156,
+				158,
+				160,
+				162,
+				164,
+				166,
+				168,
+				170,
+				172,
+				174,
+				176,
+				178,
+				180,
+				182,
+				184,
+				186,
+				188,
+				190,
+				192,
+				194,
+				196,
+				198,
+				200,
+				202,
+				204,
+				206,
+				208,
+				210,
+				212,
+				214,
+				216,
+				218,
+				220,
+				222,
+				224,
+				226,
+				228,
+				230,
+				232,
+				234,
+				236,
+				238,
+				240,
+				242,
+				244,
+				246,
+				248,
+				250,
+				252,
+				254,
+				256,
+				258,
+				260,
+				262,
+				264,
+				266,
+				268,
+				271,
+				272,
+				273,
+				274,
+				275,
+				286,
+				287,
+				288,
+				289,
+				392,
+				393,
+				394,
+				395,
+				396,
+				397,
+				398,
+				399,
+				400
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				5,
+				7,
+				9,
+				11,
+				13,
+				15,
+				17,
+				19,
+				21,
+				23,
+				25,
+				27,
+				29,
+				31,
+				33,
+				35,
+				36,
+				38,
+				39,
+				41,
+				43,
+				45,
+				47,
+				49,
+				50,
+				52,
+				54,
+				56,
+				57,
+				59,
+				61,
+				63,
+				65,
+				66,
+				68,
+				70,
+				72,
+				74,
+				75,
+				76
+			]
+		},
+		{
+			"name" : "Resources",
+			"sourceIndexes" : 
+			[
+				276,
+				277,
+				278,
+				279,
+				280,
+				281,
+				282,
+				283,
+				284,
+				285
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				290,
+				291,
+				292,
+				293,
+				294,
+				295,
+				296,
+				297,
+				298,
+				299,
+				300,
+				301,
+				302,
+				303,
+				304,
+				305,
+				306,
+				307,
+				308,
+				309,
+				310,
+				311,
+				312,
+				313,
+				314,
+				315,
+				316,
+				317,
+				318,
+				319,
+				320,
+				321,
+				322,
+				323,
+				324,
+				325,
+				326,
+				327,
+				328,
+				329,
+				330,
+				331,
+				332,
+				333,
+				334,
+				335,
+				336,
+				337,
+				338,
+				339,
+				340,
+				341,
+				342,
+				343,
+				344,
+				345,
+				346,
+				347,
+				348,
+				349,
+				350,
+				351,
+				352,
+				353,
+				354,
+				355,
+				356,
+				357,
+				358,
+				359,
+				360,
+				361,
+				362,
+				363,
+				364,
+				365,
+				366,
+				367,
+				368,
+				369,
+				370,
+				371,
+				372,
+				373,
+				374,
+				375,
+				376,
+				377,
+				378,
+				379,
+				380,
+				381,
+				382,
+				383,
+				384,
+				385,
+				386,
+				387,
+				388,
+				389,
+				390,
+				391
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/fluentuiplugin_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 79,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/meta_types/qt6fluentuiplugin_debug_metatypes.json.gen",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 80,
+			"compileGroupIndex" : 1,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/fluentuiplugin_qmltyperegistrations.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 85,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qrc_qmake_FluentUI.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 87,
+			"compileGroupIndex" : 0,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/fluentuiplugin_FluentUIPlugin.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/Def.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/FluAccentColor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/FluAccentColor.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/FluApp.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/FluApp.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/FluCaptcha.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/FluCaptcha.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/FluColors.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/FluColors.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/FluFrameless.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/FluFrameless.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/FluHotkey.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/FluHotkey.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/FluQrCodeItem.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/FluQrCodeItem.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/FluRectangle.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/FluRectangle.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/FluTableModel.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/FluTableModel.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/FluTableSortProxyModel.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/FluTableSortProxyModel.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/FluTextStyle.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/FluTextStyle.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/FluTheme.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/FluTheme.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/FluTools.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/FluTools.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/FluTreeModel.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/FluTreeModel.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/FluWatermark.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/FluWatermark.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/FluentIconDef.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/qhotkey/qhotkey.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/qhotkey/qhotkey.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/qhotkey/qhotkey_p.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/qmlcustomplot/TimePlot.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/qmlcustomplot/TimePlot.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/qmlcustomplot/axis.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/qmlcustomplot/axis.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/qmlcustomplot/baseplot.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/qmlcustomplot/baseplot.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/qmlcustomplot/graph.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/qmlcustomplot/graph.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/qmlcustomplot/grid.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/qmlcustomplot/grid.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/qmlcustomplot/macros.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/qmlcustomplot/qcustomplot.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/qmlcustomplot/qcustomplot.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/qmlcustomplot/ticker.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/qmlcustomplot/ticker.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/qrcode/bitstream.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/qrcode/bitstream.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/qrcode/config.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/qrcode/mask.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/qrcode/mask.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/qrcode/mmask.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/qrcode/mmask.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/qrcode/mqrspec.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/qrcode/mqrspec.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/qrcode/qrencode.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/qrcode/qrencode.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/qrcode/qrencode_inner.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/qrcode/qrinput.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/qrcode/qrinput.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/qrcode/qrspec.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/qrcode/qrspec.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/qrcode/rsecc.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/qrcode/rsecc.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/qrcode/split.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/qrcode/split.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/singleton.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"path" : "FluentUI/stdafx.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 0,
+			"path" : "FluentUI/qhotkey/qhotkey_win.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 88,
+			"compileGroupIndex" : 2,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/version_fluentuiplugin.rc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 89,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluAcrylic.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 90,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_qmlcache_loader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 91,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluAcrylic_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 92,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluAppBar.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 93,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluAppBar_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 94,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluAutoSuggestBox.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 95,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluAutoSuggestBox_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 96,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluBadge.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 97,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluBadge_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 98,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluBreadcrumbBar.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 99,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluBreadcrumbBar_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 100,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 101,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluButton_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 102,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluCalendarPicker.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 103,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluCalendarPicker_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 104,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluCarousel.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 105,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluCarousel_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 106,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluChart.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 107,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluChart_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 108,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluCheckBox.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 109,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluCheckBox_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 110,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluClip.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 111,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluClip_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 112,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluColorPicker.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 113,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluColorPicker_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 114,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluComboBox.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 115,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluComboBox_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 116,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluContentDialog.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 117,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluContentDialog_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 118,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluContentPage.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 119,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluContentPage_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 120,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluControl.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 121,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluControl_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 122,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluControlBackground.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 123,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluControlBackground_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 124,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluCopyableText.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 125,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluCopyableText_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 126,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluDatePicker.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 127,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluDatePicker_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 128,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluDivider.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 129,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluDivider_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 130,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluDropDownButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 131,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluDropDownButton_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 132,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluEvent.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 133,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluEvent_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 134,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluEventBus.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 135,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluEventBus_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 136,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluExpander.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 137,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluExpander_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 138,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluFilledButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 139,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluFilledButton_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 140,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluFlipView.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 141,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluFlipView_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 142,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluFocusRectangle.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 143,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluFocusRectangle_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 144,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluFrame.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 145,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluFrame_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 146,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluGroupBox.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 147,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluGroupBox_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 148,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluIcon.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 149,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluIcon_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 150,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluIconButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 151,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluIconButton_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 152,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluImage.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 153,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluImage_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 154,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluImageButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 155,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluImageButton_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 156,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluInfoBar.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 157,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluInfoBar_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 158,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluItemDelegate.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 159,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluItemDelegate_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 160,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluLauncher.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 161,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluLauncher_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 162,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluLoader.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 163,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluLoader_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 164,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluLoadingButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 165,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluLoadingButton_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 166,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluMenu.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 167,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluMenu_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 168,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluMenuBar.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 169,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluMenuBar_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 170,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluMenuBarItem.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 171,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluMenuBarItem_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 172,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluMenuItem.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 173,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluMenuItem_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 174,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluMenuSeparator.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 175,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluMenuSeparator_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 176,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluMultilineTextBox.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 177,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluMultilineTextBox_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 178,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluNavigationView.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 179,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluNavigationView_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 180,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluObject.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 181,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluObject_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 182,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluPage.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 183,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluPage_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 184,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluPagination.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 185,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluPagination_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 186,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluPaneItem.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 187,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluPaneItem_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 188,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluPaneItemEmpty.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 189,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluPaneItemEmpty_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 190,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluPaneItemExpander.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 191,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluPaneItemExpander_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 192,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluPaneItemHeader.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 193,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluPaneItemHeader_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 194,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluPaneItemSeparator.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 195,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluPaneItemSeparator_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 196,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluPasswordBox.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 197,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluPasswordBox_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 198,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluPivot.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 199,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluPivot_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 200,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluPivotItem.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 201,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluPivotItem_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 202,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluPopup.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 203,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluPopup_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 204,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluProgressBar.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 205,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluProgressBar_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 206,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluProgressButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 207,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluProgressButton_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 208,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluProgressRing.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 209,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluProgressRing_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 210,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluQRCode.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 211,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluQRCode_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 212,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluRadioButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 213,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluRadioButton_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 214,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluRadioButtons.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 215,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluRadioButtons_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 216,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluRangeSlider.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 217,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluRangeSlider_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 218,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluRatingControl.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 219,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluRatingControl_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 220,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluRemoteLoader.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 221,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluRemoteLoader_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 222,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluRouter.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 223,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluRouter_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 224,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluScrollBar.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 225,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluScrollBar_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 226,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluScrollIndicator.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 227,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluScrollIndicator_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 228,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluScrollablePage.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 229,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluScrollablePage_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 230,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluShadow.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 231,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluShadow_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 232,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluSheet.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 233,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluSheet_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 234,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluShortcutPicker.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 235,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluShortcutPicker_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 236,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluSlider.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 237,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluSlider_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 238,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluSpinBox.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 239,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluSpinBox_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 240,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluSplitLayout.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 241,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluSplitLayout_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 242,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluStaggeredLayout.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 243,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluStaggeredLayout_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 244,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluStatusLayout.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 245,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluStatusLayout_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 246,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluTabView.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 247,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluTabView_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 248,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluTableView.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 249,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluTableView_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 250,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluText.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 251,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluText_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 252,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluTextBox.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 253,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluTextBox_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 254,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluTextBoxBackground.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 255,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluTextBoxBackground_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 256,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluTextBoxMenu.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 257,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluTextBoxMenu_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 258,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluTextButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 259,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluTextButton_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 260,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluTimePicker.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 261,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluTimePicker_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 262,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluTimeline.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 263,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluTimeline_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 264,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluToggleButton.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 265,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluToggleButton_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 266,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluToggleSwitch.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 267,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluToggleSwitch_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 268,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluTooltip.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 269,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluTooltip_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 270,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluTour.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 271,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluTour_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 272,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluTreeView.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 273,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluTreeView_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 274,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluWindow.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 275,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluWindow_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 276,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluWindowDialog.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 277,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluWindowDialog_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 278,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/FluWindowResultLauncher.qml",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 279,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluWindowResultLauncher_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 283,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qrc_fluentuiplugin_raw_qml_0.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 287,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmake_FluentUI.qrc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 287,
+			"path" : "D:/Qt/6.6.3/msvc2019_64/qml/FluentUI/qmldir",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 287,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/fluentuiplugin_raw_qml_0.qrc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 287,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Controls/qmldir",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 287,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Font/FluentIcons.ttf",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 287,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Image/btn_close_hovered.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 287,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Image/btn_close_normal.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 287,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Image/btn_close_pushed.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 287,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Image/btn_max_hovered.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 287,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Image/btn_max_normal.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 287,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Image/btn_max_pushed.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 287,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Image/btn_min_hovered.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 287,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Image/btn_min_normal.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 287,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Image/btn_min_pushed.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 287,
+			"path" : "FluentUI/Qt6/imports/FluentUI/Image/noise.png",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 287,
+			"path" : "FluentUI/Qt6/imports/FluentUI/JS/Chart.js",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 287,
+			"path" : "FluentUI/Qt6/imports/FluentUI/i18n/fluentui_en_US.qm",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 287,
+			"path" : "FluentUI/Qt6/imports/FluentUI/i18n/fluentui_zh_CN.qm",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/fluentuiplugin_autogen/timestamp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/meta_types/qt6fluentuiplugin_debug_metatypes.json.gen.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/fluentuiplugin_qmltyperegistrations.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qrc_qmake_FluentUI.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_qmlcache_loader.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluAcrylic_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluAppBar_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluAutoSuggestBox_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluBadge_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluBreadcrumbBar_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluButton_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluCalendarPicker_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluCarousel_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluChart_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluCheckBox_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluClip_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluColorPicker_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluComboBox_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluContentDialog_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluContentPage_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluControl_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluControlBackground_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluCopyableText_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluDatePicker_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluDivider_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluDropDownButton_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluEvent_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluEventBus_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluExpander_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluFilledButton_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluFlipView_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluFocusRectangle_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluFrame_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluGroupBox_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluIcon_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluIconButton_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluImage_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluImageButton_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluInfoBar_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluItemDelegate_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluLauncher_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluLoader_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluLoadingButton_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluMenu_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluMenuBar_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluMenuBarItem_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluMenuItem_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluMenuSeparator_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluMultilineTextBox_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluNavigationView_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluObject_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluPage_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluPagination_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluPaneItem_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluPaneItemEmpty_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluPaneItemExpander_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluPaneItemHeader_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluPaneItemSeparator_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluPasswordBox_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluPivot_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluPivotItem_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluPopup_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluProgressBar_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluProgressButton_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluProgressRing_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluQRCode_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluRadioButton_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluRadioButtons_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluRangeSlider_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluRatingControl_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluRemoteLoader_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluRouter_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluScrollBar_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluScrollIndicator_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluScrollablePage_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluShadow_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluSheet_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluShortcutPicker_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluSlider_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluSpinBox_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluSplitLayout_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluStaggeredLayout_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluStatusLayout_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluTabView_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluTableView_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluText_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluTextBox_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluTextBoxBackground_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluTextBoxMenu_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluTextButton_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluTimePicker_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluTimeline_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluToggleButton_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluToggleSwitch_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluTooltip_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluTour_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluTreeView_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluWindow_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluWindowDialog_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qmlcache/fluentuiplugin_Qt6/imports/FluentUI/Controls/FluWindowResultLauncher_qml.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/.rcc/qrc_fluentuiplugin_raw_qml_0.cpp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/fluentuiplugin_autogen/timestamp.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug/FluentUI/meta_types/fluentuiplugin_json_file_list.txt.rule",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 16,
+			"path" : "D:/Qt/6.6.3/msvc2019_64/metatypes/qt6qml_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"path" : "D:/Qt/6.6.3/msvc2019_64/metatypes/qt6core_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 16,
+			"path" : "D:/Qt/6.6.3/msvc2019_64/metatypes/qt6network_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "D:/Qt/6.6.3/msvc2019_64/metatypes/qt6quick_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "D:/Qt/6.6.3/msvc2019_64/metatypes/qt6gui_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "D:/Qt/6.6.3/msvc2019_64/metatypes/qt6qmlmodels_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "D:/Qt/6.6.3/msvc2019_64/metatypes/qt6opengl_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "D:/Qt/6.6.3/msvc2019_64/metatypes/qt6widgets_metatypes.json",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "D:/Qt/6.6.3/msvc2019_64/metatypes/qt6printsupport_metatypes.json",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

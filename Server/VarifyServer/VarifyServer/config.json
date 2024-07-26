@@ -1,0 +1,17 @@
+{
+  "email": {
+    "user": "1977473447@qq.com",
+    "pass": "ondcktqaympweahg"
+  },
+
+  "redis": {
+    "host": "localhost",
+    "port": 6379,
+    "passwd": "qq1977473447"
+  }
+
+  "VerifyServer" : {
+    "port": "50051",
+    "host": "localhost"
+  }
+}

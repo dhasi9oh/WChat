@@ -1,0 +1,164 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "FluTableModel"
+                }
+            ],
+            "className": "FluTableModel",
+            "methods": [
+                {
+                    "access": "public",
+                    "name": "clear",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "rowIndex",
+                            "type": "int"
+                        }
+                    ],
+                    "name": "getRow",
+                    "returnType": "QVariant"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "rowIndex",
+                            "type": "int"
+                        },
+                        {
+                            "name": "row",
+                            "type": "QVariant"
+                        }
+                    ],
+                    "name": "setRow",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "rowIndex",
+                            "type": "int"
+                        },
+                        {
+                            "name": "row",
+                            "type": "QVariant"
+                        }
+                    ],
+                    "name": "insertRow",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "rowIndex",
+                            "type": "int"
+                        },
+                        {
+                            "name": "rows",
+                            "type": "int"
+                        }
+                    ],
+                    "name": "removeRow",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "rowIndex",
+                            "type": "int"
+                        }
+                    ],
+                    "isCloned": true,
+                    "name": "removeRow",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "row",
+                            "type": "QVariant"
+                        }
+                    ],
+                    "name": "appendRow",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "member": "_columnSource",
+                    "name": "columnSource",
+                    "notify": "columnSourceChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QList<QVariantMap>",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "member": "_rows",
+                    "name": "rows",
+                    "notify": "rowsChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QList<QVariantMap>",
+                    "user": false
+                },
+                {
+                    "constant": true,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "name": "rowCount",
+                    "read": "rowCount",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "FluTableModel",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "columnSourceChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "rowsChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QAbstractTableModel"
+                }
+            ]
+        }
+    ],
+    "inputFile": "FluTableModel.h",
+    "outputRevision": 68
+}

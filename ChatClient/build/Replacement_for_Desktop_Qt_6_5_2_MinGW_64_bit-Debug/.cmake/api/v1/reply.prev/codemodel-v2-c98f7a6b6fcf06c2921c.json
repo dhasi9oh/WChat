@@ -1,0 +1,253 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "FluentUI",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-FluentUI-Debug-614114920fccb21f4079.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "FluentUI",
+					"targetIndexes" : 
+					[
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16
+					]
+				},
+				{
+					"build" : "src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src-Debug-6a923af27dfc49d2561a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						2
+					],
+					"name" : "ChatClient",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "fluentuiplugin",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "ChatClient::@145eef247bfb46b6828c",
+					"jsonFile" : "target-ChatClient-Debug-048437dec9b1769ee9cf.json",
+					"name" : "ChatClient",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ChatClient_autogen::@145eef247bfb46b6828c",
+					"jsonFile" : "target-ChatClient_autogen-Debug-a86a82463c04a85ff386.json",
+					"name" : "ChatClient_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ChatClient_autogen_timestamp_deps::@145eef247bfb46b6828c",
+					"jsonFile" : "target-ChatClient_autogen_timestamp_deps-Debug-49df6fd95293d0257a6b.json",
+					"name" : "ChatClient_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ChatClient_qmlimportscan::@145eef247bfb46b6828c",
+					"jsonFile" : "target-ChatClient_qmlimportscan-Debug-816c208f7d6db6303ce5.json",
+					"name" : "ChatClient_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Script-UpdateTranslations::@145eef247bfb46b6828c",
+					"jsonFile" : "target-Script-UpdateTranslations-Debug-c3ff0b03a873d143eb6c.json",
+					"name" : "Script-UpdateTranslations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "all_qmllint::@7366c80dbef1255836ce",
+					"jsonFile" : "target-all_qmllint-Debug-c457aea0c47283c83996.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "all_qmllint_json::@7366c80dbef1255836ce",
+					"jsonFile" : "target-all_qmllint_json-Debug-e537510890f3533b69de.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "all_qmllint_module::@7366c80dbef1255836ce",
+					"jsonFile" : "target-all_qmllint_module-Debug-7179699e6a89104d231b.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "all_qmltyperegistrations::@7366c80dbef1255836ce",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-91180da07ea8f1ca8989.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fluentuiplugin::@7366c80dbef1255836ce",
+					"jsonFile" : "target-fluentuiplugin-Debug-64ae9b91c81f28d09b72.json",
+					"name" : "fluentuiplugin",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fluentuiplugin_autogen::@7366c80dbef1255836ce",
+					"jsonFile" : "target-fluentuiplugin_autogen-Debug-7b02aaa9b9d1f774bc98.json",
+					"name" : "fluentuiplugin_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fluentuiplugin_autogen_timestamp_deps::@7366c80dbef1255836ce",
+					"jsonFile" : "target-fluentuiplugin_autogen_timestamp_deps-Debug-7ecbe3b1ad239dcd734c.json",
+					"name" : "fluentuiplugin_autogen_timestamp_deps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fluentuiplugin_qmllint::@7366c80dbef1255836ce",
+					"jsonFile" : "target-fluentuiplugin_qmllint-Debug-da22e652375b768bb9be.json",
+					"name" : "fluentuiplugin_qmllint",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fluentuiplugin_qmllint_json::@7366c80dbef1255836ce",
+					"jsonFile" : "target-fluentuiplugin_qmllint_json-Debug-152ffa3f3f6bba2f6f4e.json",
+					"name" : "fluentuiplugin_qmllint_json",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fluentuiplugin_qmllint_module::@7366c80dbef1255836ce",
+					"jsonFile" : "target-fluentuiplugin_qmllint_module-Debug-d3eb9fab209fb2c269f4.json",
+					"name" : "fluentuiplugin_qmllint_module",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fluentuiplugin_qmltyperegistration::@7366c80dbef1255836ce",
+					"jsonFile" : "target-fluentuiplugin_qmltyperegistration-Debug-49ec4e5784f27f0bc207.json",
+					"name" : "fluentuiplugin_qmltyperegistration",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fluentuiplugin_tooling::@7366c80dbef1255836ce",
+					"jsonFile" : "target-fluentuiplugin_tooling-Debug-ef2f9fbf347565cfcb4d.json",
+					"name" : "fluentuiplugin_tooling",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/code/CPP/VS/ChatClient/build/Replacement_for_Desktop_Qt_6_5_2_MinGW_64_bit-Debug",
+		"source" : "D:/code/CPP/VS/ChatClient"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -1,0 +1,89 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "FluHotkey"
+                }
+            ],
+            "className": "FluHotkey",
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "member": "_sequence",
+                    "name": "sequence",
+                    "notify": "sequenceChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "member": "_name",
+                    "name": "name",
+                    "notify": "nameChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": true,
+                    "index": 2,
+                    "name": "isRegistered",
+                    "notify": "isRegisteredChanged",
+                    "read": "isRegistered",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "FluHotkey",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "sequenceChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "nameChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "isRegisteredChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "activated",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "FluHotkey.h",
+    "outputRevision": 68
+}
