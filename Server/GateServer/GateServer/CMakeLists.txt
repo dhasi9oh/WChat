@@ -8,7 +8,7 @@ file(GLOB_RECURSE ICD_FILES "./*.h")
 file(GLOB_RECURSE SRC_FILES "./*.cpp" "./*.cc")
 
 include_directories(
-    "${CMAKE_CURRENT_SOURCE_DIR}/con"
+    "${CMAKE_CURRENT_SOURCE_DIR}/contral"
     "${CMAKE_CURRENT_SOURCE_DIR}/dao"
     "${CMAKE_CURRENT_SOURCE_DIR}/utils"
     "${CMAKE_CURRENT_SOURCE_DIR}/service"

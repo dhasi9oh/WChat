@@ -189,12 +189,7 @@ TextChatMsgRsp ChatGrpcClient::NotifyTextChatMsg(std::string server_ip, const Te
 	Defer defer([&rsp, &req]() {
 		rsp.set_fromuid(req.fromuid());
 		rsp.set_touid(req.touid());
-		for (const auto& text_data : req.textmsgs()) {
-			TextChatData* new_msg = rsp.add_textmsgs();
-			new_msg->set_msgid(text_data.msgid());
-			new_msg->set_msgcontent(text_data.msgcontent());
-		}
-
+		rsp.set_textmsgs(req.textmsgs());
 		});
 
 	auto find_iter = _pools.find(server_ip);

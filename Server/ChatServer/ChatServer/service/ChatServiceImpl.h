@@ -21,7 +21,11 @@ using message::AddFriendRsp;
 using message::AuthFriendReq;
 using message::AuthFriendRsp;
 
+using message::TextChatMsgReq;
+using message::TextChatMsgRsp;
+
 using message::ChatService;
+
 
 class ChatServiceImpl : public ChatService::Service
 {
@@ -34,5 +38,7 @@ public:
 		const AuthFriendReq* request, AuthFriendRsp* response) override;
 
 	bool GetBaseInfo(std::string base_key, int uid, std::shared_ptr<UsrInfo>& userinfo);
+
+	Status NotifyTextChatMsg(ServerContext* context, const TextChatMsgReq* request, TextChatMsgRsp* reply) override;
 
 };

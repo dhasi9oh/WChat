@@ -119,3 +119,28 @@ bool ChatServiceImpl::GetBaseInfo(std::string base_key, int uid, std::shared_ptr
 	}
 
 }
+
+Status ChatServiceImpl::NotifyTextChatMsg(ServerContext* context, const TextChatMsgReq* request, TextChatMsgRsp* reply)
+{
+	//查找用户是否在本服务器
+	auto touid = request->touid();
+	auto session = UsrMgr::Instance()->getSession(touid);
+	reply->set_error(ErrorCodes::Success);
+
+	//用户不在内存中则直接返回
+	if (session == nullptr) {
+		return Status::OK;
+	}
+
+	//在内存中则直接发送通知对方
+	Json::Value  rtvalue;
+	rtvalue["error"] = ErrorCodes::Success;
+	rtvalue["fromuid"] = request->fromuid();
+	rtvalue["touid"] = request->touid();
+	rtvalue["text"] = request->textmsgs();
+
+	std::string return_str = rtvalue.toStyledString();
+
+	session->send(return_str, ID_NOTIFY_TEXT_CHAT_MSG_REQ);
+	return Status::OK;
+}

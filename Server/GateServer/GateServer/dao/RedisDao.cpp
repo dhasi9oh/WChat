@@ -12,9 +12,8 @@ bool RedisDao::Get(const std::string& key, std::string& value)
 	}
 
 	auto reply = (redisReply*)redisCommand(connect->m_connection, "GET %s", key.c_str());
-	if (reply == NULL) {
+	if (reply == nullptr) {
 		LOG_WARN("[ GET  {} ] failed", key);
-		freeReplyObject(reply);
 		m_redisPool->releaseConnection(std::move(connect));
 		return false;
 	}
@@ -41,10 +40,9 @@ bool RedisDao::Set(const std::string& key, const std::string& value) {
 	}
 	auto reply = (redisReply*)redisCommand(connect->m_connection, "SET %s %s", key.c_str(), value.c_str());
 
-	if (NULL == reply)
+	if (nullptr == reply)
 	{
 		LOG_WARN("Execut command [ SET {}  {} ] failed !", key, value);
-		freeReplyObject(reply);
 		m_redisPool->releaseConnection(std::move(connect));
 		return false;
 	}
@@ -70,10 +68,9 @@ bool RedisDao::LPush(const std::string& key, const std::string& value)
 		return false;
 	}
 	auto reply = (redisReply*)redisCommand(connect->m_connection, "LPUSH %s %s", key.c_str(), value.c_str());
-	if (NULL == reply)
+	if (nullptr == reply)
 	{
 		LOG_WARN("Execut command [ LPUSH {}  {} ] failure !", key, value);
-		freeReplyObject(reply);
 		m_redisPool->releaseConnection(std::move(connect));
 		return false;
 	}
@@ -99,7 +96,9 @@ bool RedisDao::LPop(const std::string& key, std::string& value) {
 	auto reply = (redisReply*)redisCommand(connect->m_connection, "LPOP %s ", key.c_str());
 	if (reply == nullptr || reply->type == REDIS_REPLY_NIL) {
 		LOG_WARN("Execut command [ LPOP {} ] failure !", key);
-		freeReplyObject(reply);
+		if (reply != nullptr) {
+			freeReplyObject(reply);
+		}
 		m_redisPool->releaseConnection(std::move(connect));
 		return false;
 	}
@@ -116,10 +115,9 @@ bool RedisDao::RPush(const std::string& key, const std::string& value) {
 		return false;
 	}
 	auto reply = (redisReply*)redisCommand(connect->m_connection, "RPUSH %s %s", key.c_str(), value.c_str());
-	if (NULL == reply)
+	if (nullptr == reply)
 	{
 		LOG_WARN("Execut command [ RPUSH {}  {} ] failure !", key, value);
-		freeReplyObject(reply);
 		m_redisPool->releaseConnection(std::move(connect));
 		return false;
 	}
@@ -146,7 +144,9 @@ bool RedisDao::RPop(const std::string& key, std::string& value) {
 	if (reply == nullptr || reply->type == REDIS_REPLY_NIL) {
 
 		LOG_WARN("Execut command [ RPOP {} ] failure !", key);
-		freeReplyObject(reply);
+		if (reply != nullptr) {
+			freeReplyObject(reply);
+		}
 		m_redisPool->releaseConnection(std::move(connect));
 		return false;
 	}
@@ -165,7 +165,9 @@ bool RedisDao::HSet(const std::string& key, const std::string& hkey, const std::
 	auto reply = (redisReply*)redisCommand(connect->m_connection, "HSET %s %s %s", key.c_str(), hkey.c_str(), value.c_str());
 	if (reply == nullptr || reply->type != REDIS_REPLY_INTEGER) {
 		LOG_WARN("Execut command [ HSet {}  {}  {} ] failure ! ", key, hkey, value);
-		freeReplyObject(reply);
+		if (reply != nullptr) {
+			freeReplyObject(reply);
+		}
 		m_redisPool->releaseConnection(std::move(connect));
 		return false;
 	}
@@ -195,7 +197,9 @@ bool RedisDao::HSet(const char* key, const char* hkey, const char* hvalue, size_
 	auto reply = (redisReply*)redisCommandArgv(connect->m_connection, 4, argv, argvlen);
 	if (reply == nullptr || reply->type != REDIS_REPLY_INTEGER) {
 		LOG_WARN("Execut command [ HSet {}  {}  {} ] failure ! ", key, hkey, hvalue);
-		freeReplyObject(reply);
+		if (reply != nullptr) {
+			freeReplyObject(reply);
+		}
 		m_redisPool->releaseConnection(std::move(connect));
 		return false;
 	}
@@ -222,7 +226,9 @@ std::string RedisDao::HGet(const std::string& key, const std::string& hkey)
 
 	auto reply = (redisReply*)redisCommandArgv(connect->m_connection, 3, argv, argvlen);
 	if (reply == nullptr || reply->type == REDIS_REPLY_NIL) {
-		freeReplyObject(reply);
+		if (reply != nullptr) {
+			freeReplyObject(reply);
+		}
 
 		LOG_WARN("Execut command [ HGet {}  {} ] failure ! ", key, hkey);
 		m_redisPool->releaseConnection(std::move(connect));
@@ -246,7 +252,9 @@ bool RedisDao::Del(const std::string& key)
 	if (reply == nullptr || reply->type != REDIS_REPLY_INTEGER) {
 
 		LOG_WARN("Execut command [ Del {}  ] failure ! ", key);
-		freeReplyObject(reply);
+		if (reply != nullptr) {
+			freeReplyObject(reply);
+		}
 		m_redisPool->releaseConnection(std::move(connect));
 		return false;
 	}
@@ -266,7 +274,9 @@ bool RedisDao::ExistsKey(const std::string& key)
 	auto reply = (redisReply*)redisCommand(connect->m_connection, "exists %s", key.c_str());
 	if (reply == nullptr || reply->type != REDIS_REPLY_INTEGER || reply->integer == 0) {
 		LOG_WARN("Not Found [ Key {} ] !", key);
-		freeReplyObject(reply);
+		if (reply != nullptr) {
+			freeReplyObject(reply);
+		}
 		m_redisPool->releaseConnection(std::move(connect));
 		return false;
 	}

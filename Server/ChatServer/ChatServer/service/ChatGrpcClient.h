@@ -28,7 +28,6 @@ using message::AuthFriendRsp;
 
 using message::TextChatMsgReq;
 using message::TextChatMsgRsp;
-using message::TextChatData;
 
 using message::GetChatServerRsp;
 using message::LoginRsp;

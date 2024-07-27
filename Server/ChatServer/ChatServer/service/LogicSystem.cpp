@@ -314,16 +314,11 @@ void LogicSystem::dealChatTextMsg(std::shared_ptr<TcpClient> session, const shor
 
 	auto uid = root["fromuid"].asInt();
 	auto touid = root["touid"].asInt();
-
-	const Json::Value  arrays = root["text_array"];
-	for (const auto& txt_obj : arrays) {
-		auto content = txt_obj["content"].asString();
-		auto msgid = txt_obj["msgid"].asString();
-	}
+	auto text = root["text"].asString();
 
 	Json::Value  rtvalue;
 	rtvalue["error"] = ErrorCodes::Success;
-	rtvalue["text_array"] = arrays;
+	rtvalue["text"] = text;
 	rtvalue["fromuid"] = uid;
 	rtvalue["touid"] = touid;
 
