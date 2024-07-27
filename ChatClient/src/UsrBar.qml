@@ -8,9 +8,10 @@ FluRectangle {
     color: "#efefef"
     radius: [0,0,0,0]
 
+    property int usrBarStackIndex: 0;
+    property alias usrInfoModel: usr_info_page.usrInfoPageModel;
+    property alias usrBarMsgListModel: usr_msg_page.usrMsgPageModel;
     signal usrBarMsgItemClicked(int idx);
-    property ListModel usrBarMsgListModel: usr_msg_page.usrMsgPageModel
-    property int usrBarStackIndex: 0
 
     Column {
         spacing: 0

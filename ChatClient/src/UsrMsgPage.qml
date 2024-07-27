@@ -5,6 +5,8 @@ import FluentUI 1.0
 FluRectangle {
     color: "transparent"
 
+    signal usrMsgPageMsgComing(int idx);
+    signal usrMsgPageMsgCancel(int idx);
     signal usrMsgPageListViewItemClicked(int idx);
     property ListModel usrMsgPageModel: usr_msg_page_model
 
@@ -19,7 +21,7 @@ FluRectangle {
             height: 60
             width: parent.width
             background: Rectangle {
-                color: usr_msg_page_listview.currentIndex == index ? "#eeeeee" :"white"
+                color: usr_msg_page_listview.currentIndex === index ? "#eeeeee" :"white"
             }
 
             Row {
@@ -36,6 +38,7 @@ FluRectangle {
                     anchors.verticalCenter: parent.verticalCenter
 
                     FluBadge {
+                        id: badge
                         isDot: true
                         topRight: true
                         color: "red"

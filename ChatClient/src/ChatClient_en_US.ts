@@ -4,7 +4,7 @@
 <context>
     <name>ApplyFirendPage</name>
     <message>
-        <location filename="ApplyFirendPage.qml" line="64"/>
+        <location filename="ApplyFirendPage.qml" line="68"/>
         <source>新的朋友</source>
         <translation type="unfinished"></translation>
     </message>
@@ -12,28 +12,28 @@
 <context>
     <name>ApplyFriendWindow</name>
     <message>
-        <location filename="ApplyFriendWindow.qml" line="47"/>
+        <location filename="ApplyFriendWindow.qml" line="44"/>
         <source>申请添加好友</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ApplyFriendWindow.qml" line="62"/>
+        <location filename="ApplyFriendWindow.qml" line="59"/>
         <source>好友的账户</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ApplyFriendWindow.qml" line="72"/>
-        <location filename="ApplyFriendWindow.qml" line="77"/>
+        <location filename="ApplyFriendWindow.qml" line="70"/>
+        <location filename="ApplyFriendWindow.qml" line="75"/>
         <source>备注</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ApplyFriendWindow.qml" line="92"/>
+        <location filename="ApplyFriendWindow.qml" line="90"/>
         <source>确认</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ApplyFriendWindow.qml" line="100"/>
+        <location filename="ApplyFriendWindow.qml" line="102"/>
         <source>取消</source>
         <translation type="unfinished"></translation>
     </message>
@@ -41,27 +41,27 @@
 <context>
     <name>AuthenFriendWindow</name>
     <message>
-        <location filename="AuthenFriendWindow.qml" line="44"/>
+        <location filename="AuthenFriendWindow.qml" line="47"/>
         <source>通过好友验证</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="AuthenFriendWindow.qml" line="58"/>
+        <location filename="AuthenFriendWindow.qml" line="61"/>
         <source>备注</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="AuthenFriendWindow.qml" line="68"/>
+        <location filename="AuthenFriendWindow.qml" line="71"/>
         <source>描述:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="AuthenFriendWindow.qml" line="88"/>
+        <location filename="AuthenFriendWindow.qml" line="91"/>
         <source>接受</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="AuthenFriendWindow.qml" line="96"/>
+        <location filename="AuthenFriendWindow.qml" line="99"/>
         <source>拒绝</source>
         <translation type="unfinished"></translation>
     </message>
@@ -270,12 +270,12 @@
 <context>
     <name>SearchBar</name>
     <message>
-        <location filename="SearchBar.qml" line="20"/>
+        <location filename="SearchBar.qml" line="19"/>
         <source>搜索</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SearchBar.qml" line="40"/>
+        <location filename="SearchBar.qml" line="39"/>
         <source>添加好友</source>
         <translation type="unfinished"></translation>
     </message>
@@ -283,7 +283,7 @@
 <context>
     <name>SearchPage</name>
     <message>
-        <location filename="SearchPage.qml" line="62"/>
+        <location filename="SearchPage.qml" line="48"/>
         <source>消息</source>
         <translation type="unfinished"></translation>
     </message>
@@ -307,7 +307,7 @@
 <context>
     <name>UsrMsgPage</name>
     <message>
-        <location filename="UsrMsgPage.qml" line="83"/>
+        <location filename="UsrMsgPage.qml" line="86"/>
         <source>消息</source>
         <translation type="unfinished"></translation>
     </message>

@@ -6,7 +6,7 @@ import FluentUI
 FluRectangle {
     color: "#f5f5f5"
 
-    property ListModel chatPageListmodel: chat_page_listmodel
+    property alias chatPageListmodel: chat_page_listmodel
 
     ListModel {
         id: chat_page_listmodel

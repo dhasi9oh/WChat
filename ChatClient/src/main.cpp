@@ -4,7 +4,6 @@
 #include <QDirIterator>
 #include <QDebug>
 
-#include "Def.h"
 #include "tcpmgr.h"
 #include "usrmgr.h"
 #include "httpmgr.h"
