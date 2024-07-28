@@ -3,8 +3,8 @@
 VericfyGrpcClientt::VericfyGrpcClientt()
 {
 	auto& gCfgMgr = ConfigMgr::Instance();
-	std::string host = gCfgMgr["VarifyServer"]["Host"];
-	std::string port = gCfgMgr["VarifyServer"]["Port"];
+	std::string host = gCfgMgr["VarifyServer"]["host"];
+	std::string port = gCfgMgr["VarifyServer"]["port"];
 	m_conPool.reset(new VericfyConPool(5, host, port));
 }
 

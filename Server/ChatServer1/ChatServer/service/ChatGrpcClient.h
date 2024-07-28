@@ -104,12 +104,12 @@ public:
 
 	}
 
-	AddFriendRsp NotifyAddFriend(const AddFriendReq& req);
-
+	AddFriendRsp NotifyAddFriend(std::string server_ip, const AddFriendReq& req);
+	AuthFriendRsp NotifyAuthFriend(std::string server_ip, const AuthFriendReq& req);
+	TextChatMsgRsp NotifyTextChatMsg(std::string server_ip, const TextChatMsgReq& req, const Json::Value& rtvalue);
+	bool GetBaseInfo(std::string base_key, int uid, std::shared_ptr<UsrInfo>& userinfo);
 private:
-
 	ChatGrpcClient();
-
 	std::unordered_map<std::string, std::unique_ptr<ChatConPool>> _pools;
 };
 

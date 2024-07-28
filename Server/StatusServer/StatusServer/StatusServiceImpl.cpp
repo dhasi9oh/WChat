@@ -15,15 +15,15 @@ StatusServiceImpl::StatusServiceImpl()
 {
 	auto& cfg = ConfigMgr::Instance();
 	ChatServer server;
-	server.port = cfg["ChatServer1"]["Port"];
-	server.host = cfg["ChatServer1"]["Host"];
+	server.port = cfg["ChatServer1"]["port"];
+	server.host = cfg["ChatServer1"]["host"];
 	server.con_count = 0;
-	server.name = cfg["ChatServer1"]["Name"];
+	server.name = cfg["ChatServer1"]["name"];
 	m_chatServers[server.name] = server;
 
-	server.port = cfg["ChatServer2"]["Port"];
-	server.host = cfg["ChatServer2"]["Host"];
-	server.name = cfg["ChatServer2"]["Name"];
+	server.port = cfg["ChatServer2"]["port"];
+	server.host = cfg["ChatServer2"]["host"];
+	server.name = cfg["ChatServer2"]["name"];
 	server.con_count = 0;
 	m_chatServers[server.name] = server;
 }

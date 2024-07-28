@@ -1,24 +1,9 @@
-/*
- Navicat Premium Data Transfer
-
- Source Server         : llfcmysql
- Source Server Type    : MySQL
- Source Server Version : 80027 (8.0.27)
- Source Host           : 81.68.86.146:3308
- Source Schema         : llfc
-
- Target Server Type    : MySQL
- Target Server Version : 80027 (8.0.27)
- File Encoding         : 65001
-
- Date: 17/07/2024 11:27:12
-*/
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
 -- ----------------------------
--- Table structure for friend
+-- 好友列表
 -- ----------------------------
 DROP TABLE IF EXISTS `friend`;
 CREATE TABLE `friend`  (
@@ -31,13 +16,28 @@ CREATE TABLE `friend`  (
 ) ENGINE = InnoDB AUTO_INCREMENT = 33 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
+-- 消息列表
+-- ----------------------------
+DROP TABLE IF EXISTS `msg`;
+CREATE Table `msg` (
+  `id` int UNSIGNED Not NULL AUTO_INCREMENT,
+  `self_id` int NOT NULL,
+  `friend_id` int NOT NULL,
+  'msg' text  CHARACTER SET utf8mb4 NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE,
+  FOREIGN KEY (`self_id`) REFERENCES friend(`self_id`),
+  FOREIGN KEY (`friend_id`) REFERENCES friend(`friend_id`),
+  UNIQUE INDEX `self_msg`(`self_id` ASC, `friend_id` ASC) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 33 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
 -- Records of friend
 -- ----------------------------
 INSERT INTO `friend` VALUES (31, 1002, 1019, 'zack');
 INSERT INTO `friend` VALUES (32, 1019, 1002, '');
 
 -- ----------------------------
--- Table structure for friend_apply
+-- 好友申请列表
 -- ----------------------------
 DROP TABLE IF EXISTS `friend_apply`;
 CREATE TABLE `friend_apply`  (
@@ -57,7 +57,7 @@ INSERT INTO `friend_apply` VALUES (6, 1023, 1002, 0);
 INSERT INTO `friend_apply` VALUES (30, 1012, 1002, 0);
 
 -- ----------------------------
--- Table structure for user
+-- 用户列表
 -- ----------------------------
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user`  (

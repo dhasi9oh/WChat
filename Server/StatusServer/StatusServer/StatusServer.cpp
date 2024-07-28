@@ -7,7 +7,7 @@
 void RunServer() {
 	auto& cfg = ConfigMgr::Instance();
 
-	std::string server_address(cfg["StatusServer"]["Host"] + ":" + cfg["StatusServer"]["Port"]);
+	std::string server_address(cfg["StatusServer"]["host"] + ":" + cfg["StatusServer"]["port"]);
 	StatusServiceImpl service;
 
 	grpc::ServerBuilder builder;

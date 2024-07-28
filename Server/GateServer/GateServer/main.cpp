@@ -4,7 +4,7 @@ int main()
 {
 	try {
 		auto& gCfgMgr = ConfigMgr::Instance();
-		std::string gate_port_str = gCfgMgr["GateServer"]["Port"];
+		std::string gate_port_str = gCfgMgr["GateServer"]["port"];
 		boost::asio::io_context io_context;
 		boost::asio::signal_set singal_set(io_context, SIGINT, SIGTERM);
 		singal_set.async_wait(

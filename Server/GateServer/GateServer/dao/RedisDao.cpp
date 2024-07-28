@@ -4,6 +4,14 @@ RedisDao::~RedisDao()
 {
 }
 
+RedisDao::RedisDao()
+{
+	auto& cfg_mgr = ConfigMgr::Instance();
+	auto host = cfg_mgr["Redis"]["host"];
+	auto port = cfg_mgr["Redis"]["port"];
+	auto password = cfg_mgr["Redis"]["password"];
+}
+
 bool RedisDao::Get(const std::string& key, std::string& value)
 {
 	auto connect = m_redisPool->getConnection();
@@ -240,6 +248,32 @@ std::string RedisDao::HGet(const std::string& key, const std::string& hkey)
 	m_redisPool->releaseConnection(std::move(connect));
 	LOG_INFO("Execut command [ HGet {}  {} ] success ! ", key, hkey);
 	return value;
+}
+
+bool RedisDao::HDel(const std::string& key, const std::string& field)
+{
+	auto connect = m_redisPool->getConnection();
+	if (connect == nullptr) {
+		return false;
+	}
+
+	Defer defer([&connect, this]() {
+		m_redisPool->releaseConnection(std::move(connect));
+		});
+
+	redisReply* reply = (redisReply*)redisCommand(connect->m_connection, "HDEL %s %s", key.c_str(), field.c_str());
+	if (reply == nullptr) {
+		std::cerr << "HDEL command failed" << std::endl;
+		return false;
+	}
+
+	bool success = false;
+	if (reply->type == REDIS_REPLY_INTEGER) {
+		success = reply->integer > 0;
+	}
+
+	freeReplyObject(reply);
+	return success;
 }
 
 bool RedisDao::Del(const std::string& key)

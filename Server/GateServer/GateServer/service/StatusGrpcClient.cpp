@@ -49,7 +49,7 @@ LoginRsp StatusGrpcClient::login(int uid, const std::string& token)
 StatusGrpcClient::StatusGrpcClient()
 {
 	auto& gCfgMgr = ConfigMgr::Instance();
-	std::string host = gCfgMgr["StatusServer"]["Host"];
-	std::string port = gCfgMgr["StatusServer"]["Port"];
+	std::string host = gCfgMgr["StatusServer"]["host"];
+	std::string port = gCfgMgr["StatusServer"]["port"];
 	m_conPool.reset(new StatusConPool(5, host, port));
 }
