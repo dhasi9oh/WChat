@@ -76,7 +76,7 @@ void RedisPool::checkConnection()
 
 		// 为了防止触发异常做的raii
 		Defer defer([this, &conn] {
-			m_connections.push(conn);
+			m_connections.push(std::move(conn));
 			});
 
 		// 连接未超时
@@ -126,7 +126,7 @@ void RedisPool::releaseConnection(std::unique_ptr<RedisConnection> connection)
 	std::lock_guard<std::mutex> lock(m_mutex);
 	if (b_stop || connection == nullptr) {
 		if (b_stop) {
-			freeConnection(connection->m_connection);
+			redisFree(connection->m_connection);
 		}
 		return;
 	}

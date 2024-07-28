@@ -59,7 +59,7 @@ void MysqlPool::checkConnection()
 
 		// 为了防止触发异常做的raii
 		Defer defer([this, &conn] {
-			m_connections.push(conn);
+			m_connections.push(std::move(conn));
 			});
 	
 		// 连接未超时

@@ -6,22 +6,25 @@
 #include "HttpConnection.h"
 
 #include <map>
+#include <memory>
 #include <string>
 #include <functional>
+
+class HttpConnection;
 
 class LogicSystem : public Singleton<LogicSystem>
 {
 public:
-	
-	using PostServicePtr = std::shared_ptr<PostService>;
+
 	using GetServicePtr = std::shared_ptr<GetService>;
+	using PostServicePtr = std::shared_ptr<PostService>;
 
 	~LogicSystem() = default;
 
 	void registerGet(const std::string& url, GetServicePtr);
 	void registerPost(const std::string& url, PostServicePtr);
-	bool handleGet(const std::string& url, std::shared_ptr<HttpConnection> conn);
-	bool handlePost(const std::string& url, std::shared_ptr<HttpConnection> conn);
+	bool handleGet(const std::string& url, std::shared_ptr<HttpConnection> con);
+	bool handlePost(const std::string& url, std::shared_ptr<HttpConnection> con);
 
 private:
 

@@ -9,6 +9,8 @@
 #include "TcpConnection.h"
 #include "ChatGrpcClient.h"
 
+class TcpClient;
+class LogicNode;
 using FuncCallback = std::function<void(std::shared_ptr<TcpClient>, const short& msg_id, const std::string&)>;
 
 class LogicSystem : public Singleton<LogicSystem>

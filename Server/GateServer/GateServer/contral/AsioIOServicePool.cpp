@@ -19,7 +19,7 @@ AsioIOServicePool::AsioIOServicePool(std::size_t size)
 }
 
 AsioIOServicePool::~AsioIOServicePool() {
-	Stop();
+	stop();
 	std::cout << "AsioIOServicePool destruct" << endl;
 }
 

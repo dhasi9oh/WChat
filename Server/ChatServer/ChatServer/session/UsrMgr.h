@@ -5,6 +5,7 @@
 #include "Singleton.h"
 #include "TcpConnection.h"
 
+class TcpClient;
 
 class UsrMgr : public Singleton<UsrMgr>
 {

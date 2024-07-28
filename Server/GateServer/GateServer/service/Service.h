@@ -1,5 +1,6 @@
 #pragma once
 
+#include <memory>
 #include <jsoncpp/json/json.h>
 
 #include "const.h"
@@ -8,6 +9,7 @@
 #include "StatusGrpcClient.h"
 #include "VerifyGrpcClient.h"
 
+class HttpConnection;
 using ConnPtr = std::shared_ptr<HttpConnection>;
 
 // post½Ó¿Ú

@@ -10,7 +10,7 @@
 struct ConfigInfo
 {
 	static std::string FAILED_CONFIG_ITEM;
-	using ConfigItem = std::multimap<std::string, std::string>;
+	using ConfigItem = std::map<std::string, std::string>;
 
 	std::string getItem(const std::string& key) const;
 	void setItem(const std::string& key, const std::string& value);

@@ -10,7 +10,7 @@ MysqlDao::MysqlDao()
     std::string password = ConfigMgr::Instance()["MYSQL"]["password"];
     std::string database = ConfigMgr::Instance()["MYSQL"]["database"];
 
-    m_pool = std::make_unique<MysqlPool>(url, usr, password, database);
+    m_pool = std::make_unique<MysqlPool>(5, url, usr, password, database);
 }
 
 bool MysqlDao::updatePassword(const std::string& username, const std::string& newPwd)

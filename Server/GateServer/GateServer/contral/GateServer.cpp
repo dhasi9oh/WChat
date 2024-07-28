@@ -12,7 +12,7 @@ GateServer::GateServer(boost::asio::io_context& ioc, unsigned short& port)
 void GateServer::start()
 {	
 	auto self = shared_from_this();
-	auto& io_context = AsioIOServicePool::Instance()->GetIOService();
+	auto& io_context = AsioIOServicePool::Instance()->getIOService();
 	std::shared_ptr<HttpConnection> new_con = std::make_shared<HttpConnection>(io_context);
 	m_acceptor.async_accept(new_con->getSocket(), [self, new_con](boost::beast::error_code ec) {
 		try {

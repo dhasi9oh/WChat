@@ -2,7 +2,7 @@
 #include <string>
 #include "const.h"
 
-class GateServer:public std::enable_shared_from_this<GateServer>
+class GateServer: public std::enable_shared_from_this<GateServer>
 {
 public:
 	GateServer(boost::asio::io_context& ioc, unsigned short& port);
