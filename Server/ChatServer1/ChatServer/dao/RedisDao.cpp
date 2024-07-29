@@ -10,6 +10,8 @@ RedisDao::RedisDao()
 	auto host = cfg_mgr["Redis"]["host"];
 	auto port = cfg_mgr["Redis"]["port"];
 	auto password = cfg_mgr["Redis"]["password"];
+
+	m_redisPool = std::make_unique<RedisPool>(5, host.c_str(), std::stoi(port), password.c_str());
 }
 
 bool RedisDao::Get(const std::string& key, std::string& value)

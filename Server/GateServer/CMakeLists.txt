@@ -11,5 +11,7 @@ endif()
 
 project ("GateServer")
 
+set (CMAKE_CXX_STANDARD 11)
+
 # 包含子项目。
 add_subdirectory ("GateServer")

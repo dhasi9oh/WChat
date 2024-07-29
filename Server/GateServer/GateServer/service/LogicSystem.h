@@ -10,10 +10,14 @@
 #include <string>
 #include <functional>
 
+class GetService;
+class PostService;
 class HttpConnection;
 
 class LogicSystem : public Singleton<LogicSystem>
 {
+	friend class Singleton<LogicSystem>;
+
 public:
 
 	using GetServicePtr = std::shared_ptr<GetService>;

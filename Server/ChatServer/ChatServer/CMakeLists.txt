@@ -24,7 +24,7 @@ endif()
 # 将配置文件复制到输出目录。
 configure_file(
     config.ini
-    ${CMAKE_BINARY_DIR}/config.ini
+    ${CMAKE_BINARY_DIR}/ChatServer/config.ini
     COPYONLY)
 
 # 设置项目的依赖项。

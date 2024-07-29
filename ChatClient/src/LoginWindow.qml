@@ -50,7 +50,7 @@ Rectangle {
                     }
                     else {
                         status_layout.statusMode = FluStatusLayoutType.Loading;
-                        HttpMgr.loginButtonClicked(usr_text.text, pwd_text.text);
+                        HttpMgr.onLoginButtonClicked(usr_text.text, pwd_text.text);
                     }
                 }
             }

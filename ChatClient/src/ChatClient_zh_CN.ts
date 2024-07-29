@@ -22,18 +22,17 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ApplyFriendWindow.qml" line="70"/>
-        <location filename="ApplyFriendWindow.qml" line="75"/>
+        <location filename="ApplyFriendWindow.qml" line="69"/>
         <source>备注</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ApplyFriendWindow.qml" line="90"/>
+        <location filename="ApplyFriendWindow.qml" line="88"/>
         <source>确认</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="ApplyFriendWindow.qml" line="102"/>
+        <location filename="ApplyFriendWindow.qml" line="100"/>
         <source>取消</source>
         <translation type="unfinished"></translation>
     </message>
@@ -51,17 +50,22 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="AuthenFriendWindow.qml" line="71"/>
+        <location filename="AuthenFriendWindow.qml" line="70"/>
         <source>描述:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="AuthenFriendWindow.qml" line="91"/>
+        <location filename="AuthenFriendWindow.qml" line="76"/>
+        <source>hello</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="AuthenFriendWindow.qml" line="90"/>
         <source>接受</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="AuthenFriendWindow.qml" line="99"/>
+        <location filename="AuthenFriendWindow.qml" line="98"/>
         <source>拒绝</source>
         <translation type="unfinished"></translation>
     </message>
@@ -93,36 +97,40 @@
 <context>
     <name>HttpMgr</name>
     <message>
-        <location filename="httpmgr.cpp" line="6"/>
+        <location filename="httpmgr.cpp" line="7"/>
         <source>网络请求错误</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="httpmgr.cpp" line="14"/>
-        <location filename="httpmgr.cpp" line="20"/>
+        <location filename="httpmgr.cpp" line="15"/>
+        <source>json解析错误isNUll</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="httpmgr.cpp" line="21"/>
         <source>json解析错误</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="httpmgr.cpp" line="88"/>
-        <location filename="httpmgr.cpp" line="100"/>
+        <location filename="httpmgr.cpp" line="101"/>
         <location filename="httpmgr.cpp" line="113"/>
         <location filename="httpmgr.cpp" line="126"/>
+        <location filename="httpmgr.cpp" line="139"/>
         <source>参数错误</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="httpmgr.cpp" line="92"/>
+        <location filename="httpmgr.cpp" line="106"/>
         <source>验证码已发送到邮箱，注意查收</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="httpmgr.cpp" line="104"/>
+        <location filename="httpmgr.cpp" line="119"/>
         <source>用户注册成功</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="httpmgr.cpp" line="117"/>
+        <location filename="httpmgr.cpp" line="132"/>
         <source>重置成功,点击返回登录</source>
         <translation type="unfinished"></translation>
     </message>

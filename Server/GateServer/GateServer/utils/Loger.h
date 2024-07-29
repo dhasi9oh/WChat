@@ -5,13 +5,13 @@
 #include <atomic>
 #include <iomanip>
 #include <assert.h>
+#include <fmt/format.h>
 #include <spdlog/async.h>
 #include <spdlog/spdlog.h>
 #include <spdlog/sinks/daily_file_sink.h>
 #include <spdlog/sinks/basic_file_sink.h>
 #include <spdlog/sinks/stdout_color_sinks.h>
 #include <spdlog/sinks/rotating_file_sink.h>
-#include <fmt/format.h>
 #include "ConfigMgr.h"
 
 class Log
@@ -35,7 +35,8 @@ public:
 	{
 		if (!b_open) return false;
 
-		_switchWrite(level, s);
+		assert(m_loger != nullptr);
+		m_loger->log(level, s);
 		return true;
 	}
 
@@ -45,8 +46,9 @@ public:
 	{
 		if (!b_open) return false;
 
-		std::string str = fmt::format(s, std::forward<Args>(args)...);
-		return this->write(level, str);
+		assert(m_loger != nullptr);
+		m_loger->log(level, fmt::vformat(s, fmt::make_format_args(args...)));
+		return true;
 	}
 
 
@@ -154,11 +156,6 @@ private:
 		}
 	}
 
-	void _switchWrite(Level level, const std::string& str)
-	{
-		assert(m_loger != nullptr);
-		m_loger->log(level, str);
-	}
 
 private:
 

@@ -1,8 +1,12 @@
 #include "GateServer.h"
+#include "MysqlDao.h"
+#include "RedisDao.h"
 
 int main()
 {
 	try {
+		MysqlDao::Instance();
+		RedisDao::Instance();
 		auto& gCfgMgr = ConfigMgr::Instance();
 		std::string gate_port_str = gCfgMgr["GateServer"]["port"];
 		unsigned short gate_port = static_cast<unsigned short>(std::atoi(gate_port_str.c_str()));
@@ -11,15 +15,21 @@ int main()
 		singal_set.async_wait(
 			[&io_context](const boost::system::error_code& error, int signal_number)
 			{
-				if (!error) io_context.stop();
+				if (!error) {
+					LOG_WARN("{}", error.message());
+					std::cout << error.message() << std::endl;
+					io_context.stop();
+				}
 			}
 		);
 		
-		GateServer(io_context, gate_port).start();
+		auto ptr = std::make_shared<GateServer>(io_context, gate_port);
+		ptr->start();
 		io_context.run();
 	}
 	catch (std::exception& e) {
 		LOG_ERR("{}", e.what());
+		std::cout << e.what() << std::endl;
 		return EXIT_FAILURE;
 	}
 

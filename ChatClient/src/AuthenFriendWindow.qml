@@ -63,7 +63,6 @@ Popup {
         }
 
         FluTextBox{
-            placeholderText: qsTr(name)
             anchors.horizontalCenter: parent.horizontalCenter
         }
 
@@ -74,7 +73,7 @@ Popup {
         }
 
         FluCopyableText{
-            text: qsTr(desc)
+            text: qsTr("hello")
             anchors.horizontalCenter: parent.horizontalCenter
         }
 

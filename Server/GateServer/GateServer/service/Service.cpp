@@ -21,7 +21,9 @@ void LoginService::operator()(ConnPtr conn_ptr)
 	}
 
 	std::string email = src_root["email"].asString();
-	std::string password = src_root["password"].asString();
+	std::string password = src_root["passwd"].asString();
+
+	LOG_INFO("login user email is {}, password is {}", email, password);
 
 	//验证用户信息
 	UserInfo info;

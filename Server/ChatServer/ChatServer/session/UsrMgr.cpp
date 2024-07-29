@@ -28,3 +28,7 @@ void UsrMgr::rmUserSession(int uid)
 	std::lock_guard<std::mutex> lock(m_mutex);
 	m_sessions.erase(uid);
 }
+
+UsrMgr::UsrMgr()
+{
+}

@@ -3,12 +3,12 @@
 
 MysqlDao::MysqlDao()
 {
-    std::string host = ConfigMgr::Instance()["MYSQL"]["host"];
-    std::string port = ConfigMgr::Instance()["MYSQL"]["port"];
+    std::string host = ConfigMgr::Instance()["Mysql"]["host"];
+    std::string port = ConfigMgr::Instance()["Mysql"]["port"];
     std::string url = host + ":" + port;
-    std::string usr = ConfigMgr::Instance()["MYSQL"]["user"];
-    std::string password = ConfigMgr::Instance()["MYSQL"]["password"];
-    std::string database = ConfigMgr::Instance()["MYSQL"]["database"];
+    std::string usr = ConfigMgr::Instance()["Mysql"]["user"];
+    std::string password = ConfigMgr::Instance()["Mysql"]["password"];
+    std::string database = ConfigMgr::Instance()["Mysql"]["database"];
 
     m_pool = std::make_unique<MysqlPool>(5, url, usr, password, database);
 }

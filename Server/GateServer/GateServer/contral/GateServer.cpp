@@ -21,7 +21,7 @@ void GateServer::start()
 				self->start();
 				return;
 			}
-
+			LOG_INFO("new connection");
 			//处理新链接，创建HpptConnection类管理新连接
 			new_con->start();
 			//继续监听

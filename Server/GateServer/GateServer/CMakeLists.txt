@@ -7,6 +7,8 @@
 file(GLOB_RECURSE ICD_FILES "./*.h")
 file(GLOB_RECURSE SRC_FILES "./*.cpp" "./*.cc")
 
+find_package(fmt REQUIRED)
+
 include_directories(
     "${CMAKE_CURRENT_SOURCE_DIR}/contral"
     "${CMAKE_CURRENT_SOURCE_DIR}/dao"
@@ -24,12 +26,12 @@ endif()
 # 将配置文件复制到输出目录。
 configure_file(
     config.ini
-    ${CMAKE_BINARY_DIR}/config.ini
+    ${CMAKE_BINARY_DIR}/GateServer/config.ini
     COPYONLY)
 
 # 设置项目的依赖项。
 target_link_libraries (GateServer PUBLIC
-    fmt
+    fmt::fmt
     spdlog
     jsoncpp
     protobuf

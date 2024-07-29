@@ -68,7 +68,7 @@ private:
 	//收到的消息
 	std::shared_ptr<RecvMsgNode> m_recvMsgNode;
 	//收到消息的头部信息
-	std::shared_ptr<RecvMsgNode> m_recvHeaderNode;
+	std::shared_ptr<MsgNode> m_recvHeaderNode;
 	//待发送的消息队列
 	std::queue<std::shared_ptr<SendMsgNode>> m_sendMsgQueue;
 

@@ -11,9 +11,8 @@
 #include <QNetworkAccessManager>
 
 #include "global.h"
-#include "usrmgr.h"
 
-class HttpMgr : public QObject, public std::enable_shared_from_this<HttpMgr>
+class HttpMgr : public QObject
 {
     Q_OBJECT
     QML_ELEMENT

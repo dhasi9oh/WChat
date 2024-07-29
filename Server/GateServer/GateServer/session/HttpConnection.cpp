@@ -123,7 +123,6 @@ void HttpConnection::httpMessageParse()
 		//³É¹¦
 		m_response.result(boost::beast::http::status::ok);
 		m_response.set(boost::beast::http::field::server, "GateServer");
-		boost::beast::ostream(m_response.body()) << "Success";
 		makeResponse();
 		return;
 	}

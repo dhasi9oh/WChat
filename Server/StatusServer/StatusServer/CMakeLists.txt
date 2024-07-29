@@ -19,7 +19,7 @@ add_executable(StatusServer ${ICD_FILES}  ${SRC_FILES})
 # 将配置文件复制到输出目录。
 configure_file(
     config.ini
-    ${CMAKE_BINARY_DIR}/config.ini
+    ${CMAKE_BINARY_DIR}/StatusServer/config.ini
     COPYONLY)
 
 # 设置项目的依赖项。

@@ -30,11 +30,11 @@ bool LogicSystem::handlePost(const std::string& url, std::shared_ptr<HttpConnect
 LogicSystem::LogicSystem()
 {
 	// 用户登录
-	registerPost("user_login", std::make_shared<LoginService>());
+	registerPost("/user_login", std::make_shared<LoginService>());
 	// 用户注册
-	registerPost("user_register", std::make_shared<RegisterService>());
+	registerPost("/user_register", std::make_shared<RegisterService>());
 	// 修改密码
-	registerPost("reset_pwd", std::make_shared<ResetService>());
+	registerPost("/reset_pwd", std::make_shared<ResetService>());
 	// 获取验证码
-	registerPost("get_varifycode", std::make_shared<GetVerifyCodeService>());
+	registerPost("/get_varifycode", std::make_shared<GetVerifyCodeService>());
 }

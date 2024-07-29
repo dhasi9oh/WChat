@@ -10,7 +10,7 @@ TcpClient::TcpClient(boost::asio::io_context& io_context, ChatServer* server)
 	//Éú³ÉsessionID
 	boost::uuids::uuid uuid = boost::uuids::random_generator()();
 	m_sessionID = boost::uuids::to_string(uuid);
-	m_recvHeaderNode = std::make_shared<RecvMsgNode>(HEAD_TOTAL_LEN);
+	m_recvHeaderNode = std::make_shared<MsgNode>(HEAD_TOTAL_LEN);
 }
 
 TcpClient::~TcpClient()

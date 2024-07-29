@@ -1,4 +1,4 @@
-﻿# CMakeList.txt: ChatServer 的 CMake 项目，在此处包括源代码并定义
+﻿# CMakeList.txt: ChatServer2 的 CMake 项目，在此处包括源代码并定义
 # 项目特定的逻辑。
 #
 
@@ -15,20 +15,20 @@ include_directories(
     "${CMAKE_CURRENT_SOURCE_DIR}/session"
 )
 
-add_executable(ChatServer ${ICD_FILES}  ${SRC_FILES})
+add_executable(ChatServer2 ${ICD_FILES}  ${SRC_FILES})
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
-  set_property(TARGET ChatServer PROPERTY CXX_STANDARD 20)
+  set_property(TARGET ChatServer2 PROPERTY CXX_STANDARD 20)
 endif()
 
 # 将配置文件复制到输出目录。
 configure_file(
     config.ini
-    ${CMAKE_BINARY_DIR}/config.ini
+    ${CMAKE_BINARY_DIR}/ChatServer2/config.ini
     COPYONLY)
 
 # 设置项目的依赖项。
-target_link_libraries (ChatServer PUBLIC
+target_link_libraries (ChatServer2 PUBLIC
     fmt
     spdlog
     jsoncpp

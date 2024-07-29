@@ -61,7 +61,6 @@ Popup {
         }
 
         FluTextBox{
-            placeholderText: qsTr(usrNameStr)
             anchors.horizontalCenter: parent.horizontalCenter
         }
 
@@ -72,7 +71,6 @@ Popup {
         }
 
         FluTextBox{
-            placeholderText: qsTr("备注")
             anchors.horizontalCenter: parent.horizontalCenter
         }
 

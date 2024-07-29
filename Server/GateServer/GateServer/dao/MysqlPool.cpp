@@ -7,6 +7,7 @@ MysqlPool::MysqlPool(int size, const std::string& url, const std::string& user, 
 	, m_user(user)
 	, m_password(password)
 	, m_database(database)
+	, b_stop(false)
 {
 	try {
 		for (int i = 0; i < size; ++i) {
@@ -69,8 +70,8 @@ void MysqlPool::checkConnection()
 
 		try {
 			// 执行一个查询语句, 防止连接超时
-			sql::PreparedStatement* stmt = conn->m_connection->prepareStatement("SELECT 1");
-			stmt->execute();
+			std::unique_ptr<sql::Statement> stmt(conn->m_connection->createStatement());
+			stmt->executeQuery("SELECT 1");
 			conn->m_last_oper_time = time;
 		}
 		catch (sql::SQLException& e) {
@@ -79,9 +80,10 @@ void MysqlPool::checkConnection()
 
 			// 创建数据库连接
 			auto drive = sql::mysql::get_mysql_driver_instance();
-			auto con = std::make_unique<SqlConnection>(drive->connect(m_url, m_user, m_password), time);
-			con->m_connection->setSchema(m_database);
-			m_connections.push(std::move(con));
+			auto new_con = drive->connect(m_url, m_user, m_password);
+			new_con->setSchema(m_database);
+			conn->m_connection.reset(new_con);
+			conn->m_last_oper_time = time;
 		}
 	}
 }

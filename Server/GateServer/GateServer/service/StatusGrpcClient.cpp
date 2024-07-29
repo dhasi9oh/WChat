@@ -10,12 +10,19 @@ GetChatServerRsp StatusGrpcClient::getChatServer(int uid)
 	//设置请求报文中的相关字段
 	req.set_uid(uid);
 	auto stub = m_conPool->getStub();
+	if (stub == nullptr)
+	{
+		LOG_ERR("get stub failed");
+	}
 	Status status = stub->GetChatServer(&context, req, &rsp);
 
 	Defer defer([this, &stub] { m_conPool->releaseStub(std::move(stub)); });
 
 	if (status.ok()) {
 		return rsp;
+	}
+	else {
+		LOG_INFO("{}", status.error_message());
 	}
 
 	rsp.set_error(ErrorCodes::RPCFailed);

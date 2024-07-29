@@ -26,7 +26,7 @@ class StatusConPool
 public:
 
 	StatusConPool(size_t size, std::string host, std::string port)
-		: m_size(size), m_host(host), m_port(port)
+		: m_size(size), m_host(host), m_port(port), b_stop(false)
 	{
 		for (size_t i = 0; i < size; ++i) {
 			
