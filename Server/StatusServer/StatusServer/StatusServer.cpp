@@ -6,6 +6,7 @@
 
 void RunServer() {
 	auto& cfg = ConfigMgr::Instance();
+	RedisDao::Instance();
 
 	std::string server_address(cfg["StatusServer"]["host"] + ":" + cfg["StatusServer"]["port"]);
 	StatusServiceImpl service;

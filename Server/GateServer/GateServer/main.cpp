@@ -17,7 +17,6 @@ int main()
 			{
 				if (!error) {
 					LOG_WARN("{}", error.message());
-					std::cout << error.message() << std::endl;
 					io_context.stop();
 				}
 			}
@@ -29,7 +28,6 @@ int main()
 	}
 	catch (std::exception& e) {
 		LOG_ERR("{}", e.what());
-		std::cout << e.what() << std::endl;
 		return EXIT_FAILURE;
 	}
 

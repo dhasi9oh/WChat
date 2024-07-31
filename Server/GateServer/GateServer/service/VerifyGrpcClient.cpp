@@ -8,7 +8,7 @@ VericfyGrpcClientt::VericfyGrpcClientt()
 	m_conPool.reset(new VericfyConPool(5, host, port));
 }
 
-GetVarifyRsp VericfyGrpcClientt::getChatServer(std::string email)
+GetVarifyRsp VericfyGrpcClientt::GetVarifyCode(std::string email)
 {
 	ClientContext context;
 	//grpc生成的获取验证码响应报文

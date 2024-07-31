@@ -69,7 +69,7 @@ void TcpClient::send(const char* message, int length, int msg_id)
 	if (send_que_size > 0) return;
 
 	auto &send_msg_node = m_sendMsgQueue.front();
-	boost::asio::async_write(m_socket, boost::asio::buffer(send_msg_node->data_ptr, send_msg_node->total),
+	boost::asio::async_write(m_socket, boost::asio::buffer(send_msg_node->data_ptr, send_msg_node->size),
 		std::bind(&TcpClient::handleWrite, this, std::placeholders::_1, sharedSelf()));
 }
 
@@ -98,9 +98,9 @@ void TcpClient::asyncReadBody(int len)
 				return;
 			}
 
-			memcpy(m_recvMsgNode->data_ptr, m_buf, len);
-			m_recvMsgNode->size += bytes_transferred;
-			m_recvMsgNode->data_ptr[m_recvMsgNode->total] = '\0';
+			memcpy(m_recvMsgNode->data_ptr, m_buf, bytes_transferred);
+			m_recvMsgNode->total += bytes_transferred;
+			m_recvMsgNode->data_ptr[m_recvMsgNode->size] = '\0';
 
 			//根据消息处理相关业务
 			LogicSystem::Instance()->postMsgToQue(std::make_shared<LogicNode>(shared_from_this(), m_recvMsgNode));
@@ -180,7 +180,7 @@ void TcpClient::asyncReadFull(int len, std::function<void(const boost::system::e
 void TcpClient::asyncReadLength(int read_len, int total_len, std::function<void(const boost::system::error_code&, size_t)> handler)
 {
 	auto self = shared_from_this();
-	m_socket.async_read_some(boost::asio::buffer(m_recvMsgNode->data_ptr + read_len, m_recvMsgNode->total - read_len),
+	m_socket.async_read_some(boost::asio::buffer(m_buf + read_len, total_len - read_len),
 		[read_len, total_len, handler, self](const	boost::system::error_code& ec, size_t bytes_transferred)
 		{
 			//出现错误

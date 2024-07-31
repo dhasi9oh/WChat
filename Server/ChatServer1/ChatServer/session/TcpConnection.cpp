@@ -65,11 +65,8 @@ void TcpClient::send(const char* message, int length, int msg_id)
 	}
 
 	m_sendMsgQueue.push(std::make_shared<SendMsgNode>(message, length, msg_id));
-	//send一次会把发送队列清空，所以如果原来大于0，说明有数据在发送，不再发送
-	if (send_que_size > 0) return;
-
-	auto &send_msg_node = m_sendMsgQueue.front();
-	boost::asio::async_write(m_socket, boost::asio::buffer(send_msg_node->data_ptr, send_msg_node->total),
+	auto& send_msg_node = m_sendMsgQueue.front();
+	boost::asio::async_write(m_socket, boost::asio::buffer(send_msg_node->data_ptr, send_msg_node->size),
 		std::bind(&TcpClient::handleWrite, this, std::placeholders::_1, sharedSelf()));
 }
 
@@ -81,7 +78,7 @@ std::shared_ptr<TcpClient> TcpClient::sharedSelf()
 void TcpClient::asyncReadBody(int len)
 {
 	auto self = shared_from_this();
-	asyncReadFull(len, 
+	asyncReadFull(len,
 		[self, this, len](const boost::system::error_code& ec, size_t bytes_transferred)
 		{
 			if (ec) {
@@ -98,9 +95,9 @@ void TcpClient::asyncReadBody(int len)
 				return;
 			}
 
-			memcpy(m_recvMsgNode->data_ptr, m_buf, len);
-			m_recvMsgNode->size += bytes_transferred;
-			m_recvMsgNode->data_ptr[m_recvMsgNode->total] = '\0';
+			memcpy(m_recvMsgNode->data_ptr, m_buf, bytes_transferred);
+			m_recvMsgNode->total += bytes_transferred;
+			m_recvMsgNode->data_ptr[m_recvMsgNode->size] = '\0';
 
 			//根据消息处理相关业务
 			LogicSystem::Instance()->postMsgToQue(std::make_shared<LogicNode>(shared_from_this(), m_recvMsgNode));
@@ -180,7 +177,7 @@ void TcpClient::asyncReadFull(int len, std::function<void(const boost::system::e
 void TcpClient::asyncReadLength(int read_len, int total_len, std::function<void(const boost::system::error_code&, size_t)> handler)
 {
 	auto self = shared_from_this();
-	m_socket.async_read_some(boost::asio::buffer(m_recvMsgNode->data_ptr + read_len, m_recvMsgNode->total - read_len),
+	m_socket.async_read_some(boost::asio::buffer(m_buf + read_len, total_len - read_len),
 		[read_len, total_len, handler, self](const	boost::system::error_code& ec, size_t bytes_transferred)
 		{
 			//出现错误
@@ -212,8 +209,11 @@ void TcpClient::handleWrite(const boost::system::error_code& ec, std::shared_ptr
 		}
 
 		std::lock_guard<std::mutex> lock(m_mutex);
-		//发送完毕，从队列中删除
-		m_sendMsgQueue.pop();
+
+		if (!m_sendMsgQueue.empty()) {
+			//发送完毕，从队列中删除
+			m_sendMsgQueue.pop();
+		}
 
 		//如果还有数据在队列中，就继续发送
 		if (!m_sendMsgQueue.empty()) {

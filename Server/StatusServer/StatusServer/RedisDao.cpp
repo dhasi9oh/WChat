@@ -235,17 +235,19 @@ std::string RedisDao::HGet(const std::string& key, const std::string& hkey)
 	argvlen[2] = hkey.length();
 
 	auto reply = (redisReply*)redisCommandArgv(connect->m_connection, 3, argv, argvlen);
-	if (reply == nullptr || reply->type == REDIS_REPLY_NIL) {
-		if (reply != nullptr) {
-			freeReplyObject(reply);
-		}
-
+	if (reply == nullptr) {
 		LOG_WARN("Execut command [ HGet {}  {} ] failure ! ", key, hkey);
+		return "";
+	}
+
+	if (reply->type == REDIS_REPLY_NIL) {
+		LOG_WARN("Execut command [ HGet {}  {} ] failure ! ", key, hkey);
+		freeReplyObject(reply);
 		m_redisPool->releaseConnection(std::move(connect));
 		return "";
 	}
 
-	std::string value = reply->str;
+	std::string value = std::string(reply->str, reply->len);
 	freeReplyObject(reply);
 	m_redisPool->releaseConnection(std::move(connect));
 	LOG_INFO("Execut command [ HGet {}  {} ] success ! ", key, hkey);

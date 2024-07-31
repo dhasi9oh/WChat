@@ -16,6 +16,7 @@ ChatServer::~ChatServer() {
 
 void ChatServer::handleAccept(std::shared_ptr<TcpClient> new_session, const boost::system::error_code& error) {
 	if (!error) {
+		LOG_INFO("new session accepted, sessionID is ");
 		new_session->start();
 		std::lock_guard<std::mutex> lock(m_mutex);
 		m_sessions.insert(std::make_pair(new_session->sessionID(), new_session));

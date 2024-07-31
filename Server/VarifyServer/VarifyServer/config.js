@@ -6,7 +6,12 @@ let redis_host = config.redis.host;
 let redis_port = config.redis.port;
 let redis_passwd = config.redis.passwd;
 let verify_server_ip = config.VerifyServer.host + ":" + config.VerifyServer.port;
-let code_prefix = "code_";
+
+console.log("email_user: " + email_user);
+console.log("email_pass: " + email_pass);
+console.log("redis_host: " + redis_host);
+console.log("redis_port: " + redis_port);
+console.log("redis_passwd: " + redis_passwd);
 
 module.exports = {
     email_user,
@@ -14,6 +19,5 @@ module.exports = {
     redis_host,
     redis_port,
     redis_passwd,
-    code_prefix,
     verify_server_ip
 }

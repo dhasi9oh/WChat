@@ -59,7 +59,7 @@ void MysqlPool::checkConnection()
 
 		// 为了防止触发异常做的raii
 		Defer defer([this, &conn] {
-			m_connections.push(conn);
+			m_connections.push(std::move(conn));
 			});
 	
 		// 连接未超时
@@ -69,7 +69,7 @@ void MysqlPool::checkConnection()
 
 		try {
 			// 执行一个查询语句, 防止连接超时
-			sql::PreparedStatement* stmt = conn->m_connection->prepareStatement("SELECT 1");
+			std::unique_ptr<sql::PreparedStatement> stmt(conn->m_connection->prepareStatement("SELECT 1"));
 			stmt->execute();
 			conn->m_last_oper_time = time;
 		}

@@ -14,18 +14,29 @@ std::string generate_unique_string() {
 StatusServiceImpl::StatusServiceImpl()
 {
 	auto& cfg = ConfigMgr::Instance();
-	ChatServer server;
-	server.port = cfg["ChatServer1"]["port"];
-	server.host = cfg["ChatServer1"]["host"];
-	server.con_count = 0;
-	server.name = cfg["ChatServer1"]["name"];
-	m_chatServers[server.name] = server;
 
-	server.port = cfg["ChatServer2"]["port"];
-	server.host = cfg["ChatServer2"]["host"];
-	server.name = cfg["ChatServer2"]["name"];
-	server.con_count = 0;
-	m_chatServers[server.name] = server;
+	auto server_list = cfg["ChatServers"]["name"];
+
+	std::vector<std::string> words;
+
+	std::stringstream ss(server_list);
+	std::string word;
+
+	while (std::getline(ss, word, ',')) {
+		words.push_back(word);
+	}
+
+	for (auto& word : words) {
+		if (cfg[word]["name"].empty()) {
+			continue;
+		}
+
+		ChatServer server;
+		server.port = cfg[word]["port"];
+		server.host = cfg[word]["host"];
+		server.name = cfg[word]["name"];
+		m_chatServers[server.name] = server;
+	}
 }
 
 //客户端发来请求需要登录
@@ -34,23 +45,22 @@ Status StatusServiceImpl::Login(ServerContext* context, const LoginReq* request,
 	auto uid = request->uid();
 	auto token = request->token();
 
-	std::lock_guard<std::mutex> lock(m_tokenMutex);
-	auto iter = m_tokens.find(uid);
-
-	if (m_tokens.end() == iter) {
+	std::string uid_str = std::to_string(uid);
+	std::string token_key = USERTOKENPREFIX + uid_str;
+	std::string token_value = "";
+	bool success = RedisDao::Instance()->Get(token_key, token_value);
+	if (success) {
 		response->set_error(ErrorCodes::UidInvalid);
 		return Status::OK;
 	}
 
-	if (iter->second != token) {
+	if (token_value != token) {
 		response->set_error(ErrorCodes::TokenInvalid);
 		return Status::OK;
 	}
-
 	response->set_error(ErrorCodes::Success);
 	response->set_uid(uid);
 	response->set_token(token);
-
 	return Status::OK;
 }
 
@@ -58,6 +68,8 @@ Status StatusServiceImpl::Login(ServerContext* context, const LoginReq* request,
 Status StatusServiceImpl::GetChatServer(ServerContext* context, const GetChatServerReq* request, GetChatServerRsp* response)
 {
 	const auto& server = getChatServer();
+
+	LOG_INFO("host:{} port:{}", server.host, server.port);
 
 	response->set_host(server.host);
 	response->set_port(server.port);
@@ -71,28 +83,52 @@ Status StatusServiceImpl::GetChatServer(ServerContext* context, const GetChatSer
 //插入token
 void StatusServiceImpl::insertToken(int uid, std::string token)
 {
-	std::lock_guard<std::mutex> lock(m_tokenMutex);
-	m_tokens[uid] = token;
+	std::string uid_str = std::to_string(uid);
+	std::string token_key = USERTOKENPREFIX + uid_str;
+	RedisDao::Instance()->Set(token_key, token);
 }
 
 //删除token
 void StatusServiceImpl::removeToken(int uid)
 {
-	std::lock_guard<std::mutex> lock(m_tokenMutex);
-	m_tokens.erase(uid);
 }
 
 //获取一个在线人数较少的服务器
 ChatServer StatusServiceImpl::getChatServer()
 {
 	std::lock_guard<std::mutex> lock(m_serverMutex);
-	ChatServer server = m_chatServers.begin()->second;
+	auto minServer = m_chatServers.begin()->second;
+	auto count_str = RedisDao::Instance()->HGet(LOGIN_COUNT, minServer.name);
+	if (count_str.empty()) {
+		//不存在则默认设置为最大
+		minServer.con_count = INT_MAX;
+	}
+	else {
+		minServer.con_count = std::stoi(count_str);
+	}
 
-	for (const auto& chat_server : m_chatServers) {
-		if (chat_server.second.con_count < server.con_count) {
-			server = chat_server.second;
+
+	// 使用范围基于for循环
+	for (auto& server : m_chatServers) {
+
+		if (server.second.name == minServer.name) {
+			continue;
+		}
+
+		auto count_str = RedisDao::Instance()->HGet(LOGIN_COUNT, server.second.name);
+		if (count_str.empty()) {
+			server.second.con_count = INT_MAX;
+		}
+		else {
+			server.second.con_count = std::stoi(count_str);
+		}
+
+		if (server.second.con_count < minServer.con_count) {
+			minServer = server.second;
 		}
 	}
 
-	return server;
+	LOG_INFO("minServer:{}", minServer.name);
+
+	return minServer;
 }

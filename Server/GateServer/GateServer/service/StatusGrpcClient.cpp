@@ -21,9 +21,6 @@ GetChatServerRsp StatusGrpcClient::getChatServer(int uid)
 	if (status.ok()) {
 		return rsp;
 	}
-	else {
-		LOG_INFO("{}", status.error_message());
-	}
 
 	rsp.set_error(ErrorCodes::RPCFailed);
 	return rsp;

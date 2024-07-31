@@ -2,7 +2,7 @@ const nodemailer = require('nodemailer');
 const config = require('./config');
 
 let transporter = nodemailer.createTransport({
-    host: "smtp.163.com",
+    host: "smtp.qq.com",
     port: 465,
     secure: true,
     auth: {
@@ -23,4 +23,6 @@ function sendEmail(mailOptions) {
     });
 }
 
-module.exports.sendEmail = sendEmail;
+module.exports = {
+    sendEmail
+};

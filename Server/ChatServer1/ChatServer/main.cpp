@@ -12,6 +12,7 @@
 
 int main()
 {
+	RedisDao::Instance();
 	auto& cfg = ConfigMgr::Instance();
 	auto server_name = cfg["SelfServer"]["name"];
 	try {

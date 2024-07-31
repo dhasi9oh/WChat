@@ -52,7 +52,8 @@ RedisPool::RedisPool(int size, const char* ip, int port, const char* password)
 		m_thread.detach();
 	}
 	catch (const std::exception& e) {
-		LOG_ERR("RedisPool::RedisPool init failed: {}", e.what());
+		int new_size = m_connections.size();
+		LOG_INFO("RedisPool::checkConnection pool size: {}/{}", new_size, m_size);
 	}
 }
 
@@ -119,6 +120,8 @@ void RedisPool::checkConnection()
 			conn->m_last_oper_time = time;
 		}
 	}
+	int new_size = m_connections.size();
+	LOG_INFO("RedisPool::checkConnection pool size: {}/{}", new_size, m_size);
 }
 
 void RedisPool::releaseConnection(std::unique_ptr<RedisConnection> connection)
@@ -140,6 +143,7 @@ std::unique_ptr<RedisConnection> RedisPool::getConnection()
 {
 	std::unique_lock<std::mutex> lock(m_mutex);
 	// 等待连接池中有可用连接或者是否关闭
+	int pool_size = m_connections.size();
 	m_cv.wait(lock, [this] { return !m_connections.empty() || b_stop; });
 
 	// 关闭返回空

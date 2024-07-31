@@ -44,7 +44,7 @@ RedisPool::RedisPool(int size, const char* ip, int port, const char* password)
 			[this] {
 				while (!b_stop) {
 					checkConnection();
-					std::this_thread::sleep_for(std::chrono::milliseconds(60));
+					std::this_thread::sleep_for(std::chrono::seconds(60));
 				}
 			}
 		);

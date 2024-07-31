@@ -3,9 +3,9 @@ const config = require("./config");
 
 // 创建Redis客户端实例
 const RedisClient = new Redis({
-    host: config.redis.host,
-    port: config.redis.port,
-    password: config.redis.password,
+    host: config.redis_host,
+    port: config.redis_port,
+    password: config.redis_passwd,
 
     enableOfflineQueue: false, // 禁用离线消息队列
     enableReadyCheck: true, // 启用检查连接是否可用
@@ -26,10 +26,10 @@ async function GetRedis(key) {
     try {
         const result = await RedisClient.get(key);
         if (result === null) {
-            console.log('result:', '<' + result + '>', 'This key cannot be find...')
+            console.log('result:<' + result + '>This key cannot be find...')
             return null
         }
-        console.log('Result:', '<' + result + '>', 'Get key success!...');
+        console.log('Result:<' + result + '>Get key success!...');
         return result
     }
     catch (error) {
@@ -42,10 +42,10 @@ async function ExistRedis(key) {
     try {
         const result = await RedisClient.exists(key);
         if (result === 0) {
-            console.log('result:<', '<' + result + '>', 'This key is null...');
+            console.log('result:<' + result + '>This key is null...');
             return null
         }
-        console.log('Result:', '<' + result + '>', 'With this value!...');
+        console.log('Result:<' + result + '>With this value!...');
         return result
     }
     catch (error) {

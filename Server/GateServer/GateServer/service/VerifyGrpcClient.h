@@ -87,7 +87,7 @@ class VericfyGrpcClientt : public Singleton<VericfyGrpcClientt>
 
 public:
 
-	GetVarifyRsp getChatServer(std::string email);
+	GetVarifyRsp GetVarifyCode(std::string email);
 
 private:
 

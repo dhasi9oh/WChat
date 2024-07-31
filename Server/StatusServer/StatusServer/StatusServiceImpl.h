@@ -6,7 +6,9 @@
 #include <boost/uuid/uuid_io.hpp>
 #include <boost/uuid/uuid_generators.hpp>
 
+#include "Loger.h"
 #include "const.h"
+#include "RedisDao.h"
 #include "ConfigMgr.h"
 #include "message.pb.h"
 #include "message.grpc.pb.h"
@@ -48,9 +50,7 @@ private:
 
 	ChatServer getChatServer();
 
-	std::mutex m_tokenMutex;
 	std::mutex m_serverMutex;
-	std::map<int, std::string> m_tokens;
 	std::map<std::string, ChatServer> m_chatServers;
 
 };

@@ -233,10 +233,10 @@ void GetVerifyCodeService::operator()(ConnPtr conn_ptr)
 	}
 
 	std::string email = src_root["email"].asString();
-	auto reply = VericfyGrpcClientt::Instance()->getChatServer(email);
+	auto reply = VericfyGrpcClientt::Instance()->GetVarifyCode(email);
 
-	root["error"] = reply.error();
 	root["email"] = email;
+	root["error"] = reply.error();
 
 	boost::beast::ostream(conn_ptr->getResponse().body()) << root.toStyledString();
 }

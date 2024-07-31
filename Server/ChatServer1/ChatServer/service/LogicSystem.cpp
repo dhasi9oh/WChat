@@ -3,7 +3,8 @@
 LogicSystem::~LogicSystem()
 {
 	b_stop = true;
-	m_cv.notify_all();
+	m_pushCV.notify_all();
+	m_popCV.notify_all();
 	m_thread.join();
 }
 
@@ -11,13 +12,15 @@ void LogicSystem::postMsgToQue(std::shared_ptr<LogicNode> node)
 {
 	std::unique_lock<std::mutex> lock(m_mutex);
 	//在队列大小未超过上限时和停止时获取锁
-	m_cv.wait(lock, [this] { return m_msgQue.size() < MAX_SEND_QUEUE_SIZE || b_stop; });
+	m_pushCV.wait(lock, [this] { return m_msgQue.size() < MAX_SEND_QUEUE_SIZE || b_stop; });
 
 	if (b_stop) {
 		return;
 	}
 
 	m_msgQue.push(node);
+	m_popCV.notify_one();
+	LOG_INFO("service {}", m_msgQue.front()->m_recvNode->m_msg_id);
 }
 
 LogicSystem::LogicSystem()
@@ -34,11 +37,10 @@ void LogicSystem::dealMsg()
 		{
 			std::unique_lock<std::mutex> lock(m_mutex);
 			//判断队列是否为空或者是否停止
-			m_cv.wait(lock, [this] { return !m_msgQue.empty() || b_stop; });
+			m_popCV.wait(lock, [this] { return !m_msgQue.empty() || b_stop; });
 			//获取队列中所有节点并清空队列继续执行
 			std::queue<std::shared_ptr<LogicNode>> msg_que;
 			msg_que.swap(m_msgQue);
-
 			while (!msg_que.empty()) {
 				//获取队列中的头节点
 				auto node_ptr = msg_que.front();
@@ -55,6 +57,7 @@ void LogicSystem::dealMsg()
 					);
 				}
 			}
+			m_pushCV.notify_one();
 			//判断是否停止
 			if (b_stop) {
 				for (auto& func : vf) {
@@ -64,6 +67,7 @@ void LogicSystem::dealMsg()
 			}
 		}
 		for (auto& func : vf) {
+			LOG_INFO("run service");
 			func();
 		}
 	}
@@ -90,6 +94,8 @@ void LogicSystem::registerCallBacks()
 
 void LogicSystem::loginHandler(std::shared_ptr<TcpClient> session, const short& msg_id, const std::string& message)
 {
+	LOG_INFO("{} {}", session->getUserID(), "login");
+
 	Json::Reader reader;
 	Json::Value root;
 	reader.parse(message, root);
@@ -134,6 +140,7 @@ void LogicSystem::loginHandler(std::shared_ptr<TcpClient> session, const short& 
 	info["desc"] = user_info->desc;
 	info["sex"] = user_info->sex;
 	info["icon"] = user_info->icon;
+	info["token"] = token;
 
 	//从数据库获取申请列表
 	std::vector<std::shared_ptr<ApplyInfo>> apply_list;
@@ -167,7 +174,7 @@ void LogicSystem::loginHandler(std::shared_ptr<TcpClient> session, const short& 
 		info["friend_list"].append(obj);
 	}
 
-	auto server_name = ConfigMgr::Instance().getConfigItem("SelfServer", "Name");
+	auto server_name = ConfigMgr::Instance().getConfigItem("SelfServer", "name");
 	//将登录数量增加
 	auto rd_res = RedisDao::Instance()->HGet(LOGIN_COUNT, server_name);
 	int count = 0;
@@ -189,6 +196,8 @@ void LogicSystem::loginHandler(std::shared_ptr<TcpClient> session, const short& 
 
 void LogicSystem::searchInfo(std::shared_ptr<TcpClient> session, const short& msg_id, const std::string& message)
 {
+	LOG_INFO("{} {}", session->getUserID(), "search");
+
 	Json::Reader reader;
 	Json::Value root;
 	reader.parse(message, root);
@@ -212,6 +221,8 @@ void LogicSystem::searchInfo(std::shared_ptr<TcpClient> session, const short& ms
 
 void LogicSystem::addFriendApply(std::shared_ptr<TcpClient> session, const short& msg_id, const std::string& message)
 {
+	LOG_INFO("{} {}", session->getUserID(), "add friend apply");
+
 	Json::Reader reader;
 	Json::Value root;
 	reader.parse(message, root);
@@ -251,6 +262,8 @@ void LogicSystem::addFriendApply(std::shared_ptr<TcpClient> session, const short
 
 void LogicSystem::authFriendApply(std::shared_ptr<TcpClient> session, const short& msg_id, const std::string& message)
 {
+	LOG_INFO("{} {}", session->getUserID(), "auth friend apply");
+
 	Json::Reader reader;
 	Json::Value root;
 	reader.parse(message, root);
@@ -308,6 +321,8 @@ void LogicSystem::authFriendApply(std::shared_ptr<TcpClient> session, const shor
 
 void LogicSystem::dealChatTextMsg(std::shared_ptr<TcpClient> session, const short& msg_id, const std::string& message)
 {
+	LOG_INFO("{} {}", session->getUserID(), "deal chat text msg");
+
 	Json::Reader reader;
 	Json::Value root;
 	reader.parse(message, root);
@@ -545,6 +560,7 @@ bool LogicSystem::getUserBaseInfo(const std::string& base_key, int uid, std::sha
 		RedisDao::Instance()->Set(base_key, redis_root.toStyledString());
 	}
 
+	return true;
 }
 
 bool LogicSystem::getFriendApplyListInfo(int uid, std::vector<std::shared_ptr<ApplyInfo>>& info_list)

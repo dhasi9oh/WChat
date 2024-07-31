@@ -5,6 +5,8 @@
 #include <boost/asio.hpp>
 #include "TcpConnection.h"
 
+class TcpClient;
+
 class ChatServer
 {
 public:

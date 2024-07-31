@@ -16,4 +16,4 @@ const packageDefinition = grpcLoader.loadSync(
 
 const message = grpc.loadPackageDefinition(packageDefinition).message;
 
-module.exports = message_module;
+module.exports = message;

@@ -9,6 +9,8 @@
 #include "TcpConnection.h"
 #include "ChatGrpcClient.h"
 
+class TcpClient;
+class LogicNode;
 using FuncCallback = std::function<void(std::shared_ptr<TcpClient>, const short& msg_id, const std::string&)>;
 
 class LogicSystem : public Singleton<LogicSystem>
@@ -54,7 +56,8 @@ private:
     bool b_stop;
     std::mutex m_mutex;
     std::thread m_thread;
-    std::condition_variable m_cv;
+    std::condition_variable m_popCV;
+    std::condition_variable m_pushCV;
     std::map<int, FuncCallback> m_callBackMap;
     std::queue<std::shared_ptr<LogicNode>> m_msgQue;
 

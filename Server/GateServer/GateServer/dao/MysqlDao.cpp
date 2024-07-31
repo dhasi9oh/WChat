@@ -94,12 +94,11 @@ int MysqlDao::registerUser(const std::string& username, const std::string& email
 
         //获取执行结果
         std::unique_ptr<sql::Statement> stmt2(conn->m_connection->createStatement());
-        sql::ResultSet* res = stmt2->executeQuery("SELECT @result");
+        std::unique_ptr<sql::ResultSet> res(stmt2->executeQuery("SELECT @result"));
 
         //返回执行结果
         if (res->next()) {
             int result = res->getInt(1);
-            m_pool->releaseConnection(std::move(conn));
             return result;
         }
 
